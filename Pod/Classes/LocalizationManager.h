@@ -7,6 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "UIButton+Localization.h"
+#import "UILabel+Localization.h"
+#import "UITextField+Localization.h"
+#import "UITextView+Localization.h"
 
 #ifndef local
 #define local(s) [LocalizationManager localizedStringForKey:s]

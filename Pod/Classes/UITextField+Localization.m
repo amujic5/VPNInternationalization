@@ -38,7 +38,7 @@
 {
     NSString *key = [LocalizationManager localizationKeyFromStoryboardString:self.placeholder];
     [[LocalizationManager sharedManager] setLocalizationKey:key forUIElement:self.description state:@"p"];
-    self.text = local(key);
+    self.placeholder = local(key);
 }
 
 -(void)setLocalizedTextForKey:(NSString *)localizationKey
@@ -52,7 +52,7 @@
 {
     [[LocalizationManager sharedManager] setLocalizationKey:localizationKey forUIElement:self.description state:@"p"];
     [self subscribeForLanguageChange];
-    self.text = local(localizationKey);
+    self.placeholder = local(localizationKey);
 }
 
 -(void)subscribeForLanguageChange
