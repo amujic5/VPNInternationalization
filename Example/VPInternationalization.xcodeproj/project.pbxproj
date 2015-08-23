@@ -24,6 +24,10 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		ACC2F6044C2823D8850D520F /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF54E9D4597300B8ECFBD8B /* libPods-Tests.a */; };
+		E1DA9F6D1B8A38A400686A18 /* en.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1DA9F6C1B8A38A400686A18 /* en.strings */; };
+		E1DA9F6E1B8A38A400686A18 /* en.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1DA9F6C1B8A38A400686A18 /* en.strings */; };
+		E1DA9F701B8A38AE00686A18 /* fr.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1DA9F6F1B8A38AE00686A18 /* fr.strings */; };
+		E1DA9F711B8A38AE00686A18 /* fr.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1DA9F6F1B8A38AE00686A18 /* fr.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,8 @@
 		C7A2ED72364A19C1B996FB84 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		CCF54E9D4597300B8ECFBD8B /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1800F7CB92D580F3E1670BD /* VPInternationalization.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VPInternationalization.podspec; path = ../VPInternationalization.podspec; sourceTree = "<group>"; };
+		E1DA9F6C1B8A38A400686A18 /* en.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = en.strings; sourceTree = "<group>"; };
+		E1DA9F6F1B8A38AE00686A18 /* fr.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = fr.strings; sourceTree = "<group>"; };
 		EEF2A25989B6594BC76214B9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +120,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
+				E1DA9F6B1B8A387800686A18 /* Transations */,
 				5BF48F652544D6EB1E35867C /* Pods */,
 			);
 			sourceTree = "<group>";
@@ -194,6 +201,15 @@
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
+		};
+		E1DA9F6B1B8A387800686A18 /* Transations */ = {
+			isa = PBXGroup;
+			children = (
+				E1DA9F6C1B8A38A400686A18 /* en.strings */,
+				E1DA9F6F1B8A38AE00686A18 /* fr.strings */,
+			);
+			path = Transations;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -278,8 +294,10 @@
 			files = (
 				6003F5A4195388D20070C39A /* Main_iPad.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				E1DA9F701B8A38AE00686A18 /* fr.strings in Resources */,
 				6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				E1DA9F6D1B8A38A400686A18 /* en.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +306,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+				E1DA9F6E1B8A38A400686A18 /* en.strings in Resources */,
+				E1DA9F711B8A38AE00686A18 /* fr.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

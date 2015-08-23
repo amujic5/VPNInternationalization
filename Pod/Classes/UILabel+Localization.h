@@ -10,6 +10,6 @@
 
 @interface UILabel (Localization)
 
--(void)setLocalizedTextForKey:(NSString *)localizationKey;
+@property (nonatomic, strong) IBInspectable NSString *locTitleKey;
 
 @end

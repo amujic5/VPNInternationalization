@@ -56,8 +56,8 @@ static NSString *LMLocalizationKeysForUIElements = @"LocalizationManagerLocaliza
 {
     if (!_language) {
         _language = [[NSUserDefaults standardUserDefaults] objectForKey:LMLanguage];
-        if (!_language) {
-            //DEFAULT LANGUAGE SET HERE
+        if (!_language && self.preferePhoneLanguage) {
+            //DEFAULT LANGUAGE SET HERE - from phone languages
             //this is same as [[NSLocale preferredLanguages] firstObject];
             _language = [[[NSUserDefaults standardUserDefaults] objectForKey:AppleLanguages] firstObject];
         }
@@ -65,69 +65,24 @@ static NSString *LMLocalizationKeysForUIElements = @"LocalizationManagerLocaliza
     return _language;
 }
 
+-(NSString *)defoultLanguage
+{
+    if (!_defoultLanguage) {
+        _defoultLanguage = @"en";
+    }
+    return _defoultLanguage;
+}
+
 #pragma makr - localized string for key
 
 +(NSString *)localizedStringForKey:(NSString *)key
 {
-    NSString *language = [[LocalizationManager sharedManager] language];
+    NSString *language = [LocalizationManager sharedManager].language;
     NSString *string =  NSLocalizedStringFromTable(key, language, nil);
-    if (useRollbackLanguage && [string isEqualToString:key]) {
-        string = NSLocalizedStringFromTable(key, rollbackLanguage, nil);
+    if (useDefoultLanguage && [string isEqualToString:key]) {
+        string = NSLocalizedStringFromTable(key, [LocalizationManager sharedManager].language, nil);
     }
     return string;
-}
-
-#pragma mark - UI elements key storing & helper
-
-+(BOOL)shouldLocalizeForStoryboardString:(NSString *)string
-{
-    if (!string || string.length <= 0) {
-        return NO;
-    }
-    if (string.length >= SkipTihsTextPrefix.length) {        
-        if ([[string substringToIndex:SkipTihsTextPrefix.length] isEqualToString:SkipTihsTextPrefix]) {
-            return NO;
-        }
-    }
-    return YES;
-}
-+(NSString *)stringWithRemovedSkipingPrefixFromString:(NSString *)string
-{
-    if (string.length >= SkipTihsTextPrefix.length) {
-        if ([[string substringToIndex:SkipTihsTextPrefix.length] isEqualToString:SkipTihsTextPrefix]) {
-            return [string substringFromIndex:SkipTihsTextPrefix.length];
-        } else {
-            return string;
-        }
-    }
-    return string;
-}
-
-+(NSString *)localizationKeyFromStoryboardString:(NSString *)string
-{
-    NSString *key = [[string componentsSeparatedByString:LocalizationKeyToDummyTextDivider] firstObject];
-    return [key stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-}
-
--(void)setLocalizationKey:(NSString *)key forUIElement:(NSString *)element state:(id)state
-{
-    NSString *address = [element componentsSeparatedByString:@" "][1];
-    address = [address stringByAppendingFormat:@"%@",state];
-    self.localizationKeysForUIElements[address] = key;
-}
-
--(void)removeLocalizationKeyForUIElement:(NSString *)element state:(id)state
-{
-    NSString *address = [element componentsSeparatedByString:@" "][1];
-    address = [address stringByAppendingFormat:@"%@",state];
-    [self.localizationKeysForUIElements removeObjectForKey:element];
-}
-
--(NSString *)localizationKeyForUIElement:(NSString *)element state:(id)state
-{
-    NSString *address = [element componentsSeparatedByString:@" "][1];
-    address = [address stringByAppendingFormat:@"%@",state];
-    return self.localizationKeysForUIElements[address];
 }
 
 @end

@@ -8,49 +8,26 @@
 
 #import "UILabel+Localization.h"
 #import "LocalizationManager.h"
+#import "NSObject+Localization.h"
+
+static NSString *titleKey = @"KEY";
 
 @implementation UILabel (Localization)
 
--(void)awakeFromNib
+-(NSString *)locTitleKey
 {
-    [super awakeFromNib];
-    if ([LocalizationManager shouldLocalizeForStoryboardString:self.text]) {
-        [self configureStoryboardLocalization];
-    } else {
-        self.text = [LocalizationManager stringWithRemovedSkipingPrefixFromString:self.text];
-    }
+    return self.loc_keysDictionary[titleKey];
 }
 
--(void)configureStoryboardLocalization
+-(void)setLocTitleKey:(NSString *)locTitleKey
 {
-    NSString *key = [LocalizationManager localizationKeyFromStoryboardString:self.text];
-    [[LocalizationManager sharedManager] setLocalizationKey:key forUIElement:self.description state:nil];
-    [self subscribeForLanguageChange];
-    self.text = local(key);
+    self.loc_keysDictionary[titleKey] = locTitleKey;
+    self.text = local(locTitleKey);
 }
 
--(void)setLocalizedTextForKey:(NSString *)localizationKey
+-(void)loc_localeDidChanged
 {
-    [[LocalizationManager sharedManager] setLocalizationKey:localizationKey forUIElement:self.description state:nil];
-    [self subscribeForLanguageChange];
-    self.text = local(localizationKey);
-}
-
--(void)subscribeForLanguageChange
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:LocalizationManagerLanguageDidChangeNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(languageChanged) name:LocalizationManagerLanguageDidChangeNotification object:nil];
-}
-
--(void)languageChanged
-{
-    self.text = local([[LocalizationManager sharedManager] localizationKeyForUIElement:self.description state:nil]);
-}
-
--(void)dealloc
-{
-    [[LocalizationManager sharedManager] removeLocalizationKeyForUIElement:self.description state:nil];
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:LocalizationManagerLanguageDidChangeNotification object:nil];
+    self.text = local(self.locTitleKey);
 }
 
 @end

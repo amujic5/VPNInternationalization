@@ -7,6 +7,7 @@
 //
 
 #import "VPViewController.h"
+#import <VPInternationalization/VPInternationalization.h>
 
 @interface VPViewController ()
 
@@ -24,6 +25,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)enPressed:(UIButton *)button
+{
+    [LocalizationManager sharedManager].language = @"en";
+}
+
+-(IBAction)frPressed:(UIButton *)button
+{
+    [LocalizationManager sharedManager].language = @"fr";
 }
 
 @end

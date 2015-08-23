@@ -8,85 +8,40 @@
 
 #import "UIButton+Localization.h"
 #import "LocalizationManager.h"
+#import "NSObject+Localization.h"
 
 @implementation UIButton (Localization)
 
--(void)awakeFromNib
-{
-    [super awakeFromNib];
-    
-    [self testAndConfigureStoryboardLocalizationForState:UIControlStateNormal];
-    [self testAndConfigureStoryboardLocalizationForState:UIControlStateHighlighted];
-    [self testAndConfigureStoryboardLocalizationForState:UIControlStateDisabled];
-    [self testAndConfigureStoryboardLocalizationForState:UIControlStateSelected];
-}
-
--(void)testAndConfigureStoryboardLocalizationForState:(UIControlState)state
-{
-    if ([LocalizationManager shouldLocalizeForStoryboardString:[self titleForState:state]]) {
-        [self configureStoryboardLocalizationForState:state];
-    } else {
-        [self setTitle:[LocalizationManager stringWithRemovedSkipingPrefixFromString:[self titleForState:state]] forState:state];
-    }
-}
-
--(void)configureStoryboardLocalizationForState:(UIControlState)state
-{
-    NSString *key = [LocalizationManager localizationKeyFromStoryboardString:[self titleForState:state]];
-    [[LocalizationManager sharedManager] setLocalizationKey:key forUIElement:self.description state:@(state)];
-    [self subscribeForLanguageChange];
-    [self setTitle:local(key) forState:state];
-}
-
 -(void)setLocalizedTitleForKey:(NSString *)localizationKey forState:(UIControlState)state
 {
-    [[LocalizationManager sharedManager] setLocalizationKey:localizationKey forUIElement:self.description state:@(state)];
-    [self subscribeForLanguageChange];
+    self.loc_keysDictionary[@(state)] = localizationKey;
     [self setTitle:local(localizationKey) forState:state];
 }
 
--(void)setLocalizedTitleForKey:(NSString *)localizationKey
+-(NSString *)localizationKeyForState:(UIControlState)state
 {
-    [self setLocalizedTitleForKey:localizationKey forState:UIControlStateNormal];
-    [self setLocalizedTitleForKey:localizationKey forState:UIControlStateHighlighted];
-    [self setLocalizedTitleForKey:localizationKey forState:UIControlStateDisabled];
-    [self setLocalizedTitleForKey:localizationKey forState:UIControlStateSelected];
+    return self.loc_keysDictionary[@(state)];
 }
 
--(void)subscribeForLanguageChange
+-(void)setLocTitleKey:(NSString *)locTitleKey
 {
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:LocalizationManagerLanguageDidChangeNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(languageChanged) name:LocalizationManagerLanguageDidChangeNotification object:nil];
+    [self setLocalizedTitleForKey:locTitleKey forState:UIControlStateNormal];
+    [self setLocalizedTitleForKey:locTitleKey forState:UIControlStateHighlighted];
+    [self setLocalizedTitleForKey:locTitleKey forState:UIControlStateSelected];
+    [self setLocalizedTitleForKey:locTitleKey forState:UIControlStateDisabled];
 }
 
--(void)languageChanged
+-(NSString *)locTitleKey
 {
-    [self testHasKeyAndSetLocalizedStringForState:UIControlStateNormal];
-    [self testHasKeyAndSetLocalizedStringForState:UIControlStateHighlighted];
-    [self testHasKeyAndSetLocalizedStringForState:UIControlStateDisabled];
-    [self testHasKeyAndSetLocalizedStringForState:UIControlStateSelected];
+    return self.loc_keysDictionary[@(UIControlStateNormal)];
 }
 
--(void)testHasKeyAndSetLocalizedStringForState:(UIControlState)state
+-(void)loc_localeDidChanged
 {
-    NSString *key = [[LocalizationManager sharedManager] localizationKeyForUIElement:self.description state:@(state)];
-    if (key) {
-        [self setTitle:local(key) forState:state];
+    for (NSNumber *stateObject in self.loc_keysDictionary) {
+        NSString *localizationKey = self.loc_keysDictionary[stateObject];
+        [self setTitle:local(localizationKey) forState:[stateObject integerValue]];
     }
-}
-
--(void)dealloc
-{
-    [self removeKeyForState:UIControlStateNormal];
-    [self removeKeyForState:UIControlStateHighlighted];
-    [self removeKeyForState:UIControlStateDisabled];
-    [self removeKeyForState:UIControlStateSelected];
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:LocalizationManagerLanguageDidChangeNotification object:nil];
-}
-
--(void)removeKeyForState:(UIControlState)state
-{
-    [[LocalizationManager sharedManager] removeLocalizationKeyForUIElement:self.description state:@(state)];
 }
 
 @end

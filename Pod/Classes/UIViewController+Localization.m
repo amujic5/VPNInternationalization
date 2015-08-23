@@ -1,18 +1,18 @@
 //
-//  UITextView+Localization.m
-//  LocalizationManager
+//  UIViewController+Localization.m
+//  Pods
 //
-//  Created by Vlaho Poluta on 2/8/15.
-//  Copyright (c) 2015 Infinum. All rights reserved.
+//  Created by Vlaho Poluta on 8/23/15.
+//
 //
 
-#import "UITextView+Localization.h"
+#import "UIViewController+Localization.h"
 #import "LocalizationManager.h"
 #import "NSObject+Localization.h"
 
 static NSString *titleKey = @"KEY";
 
-@implementation UITextView (Localization)
+@implementation UIViewController (Localization)
 
 -(NSString *)locTitleKey
 {
@@ -22,13 +22,12 @@ static NSString *titleKey = @"KEY";
 -(void)setLocTitleKey:(NSString *)locTitleKey
 {
     self.loc_keysDictionary[titleKey] = locTitleKey;
-    self.text = local(locTitleKey);
+    self.title = local(locTitleKey);
 }
 
 -(void)loc_localeDidChanged
 {
-    self.text = local(self.locTitleKey);
+    self.title = local(self.locTitleKey);
 }
-
 
 @end

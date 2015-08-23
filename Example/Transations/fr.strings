@@ -1,0 +1,12 @@
+/* 
+  fr.strings
+  VPInternationalization
+
+  Created by Vlaho Poluta on 8/23/15.
+  Copyright (c) 2015 Vlaho. All rights reserved.
+*/
+"text" = "t.e.x.t.";
+"hello" = "h.e.l.l.o.";
+"lorem" = "l.o.r.e.m.";
+"en" = "e.n.";
+"fr" = "f.r.";

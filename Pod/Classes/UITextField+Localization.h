@@ -10,7 +10,7 @@
 
 @interface UITextField (Localization)
 
--(void)setLocalizedTextForKey:(NSString *)localizationKey;
--(void)setLocalizedPlaceholderForKey:(NSString *)localizationKey;
+@property (nonatomic, strong) IBInspectable NSString *locTextKey;
+@property (nonatomic, strong) IBInspectable NSString *locPlaceholderKey;
 
 @end

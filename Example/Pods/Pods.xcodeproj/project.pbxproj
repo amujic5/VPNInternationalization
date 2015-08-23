@@ -7,317 +7,405 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18BD56BA8B79941CDD3F1CB8 /* Pods-VPInternationalization-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6E7C09B6C83F79C3EA2808 /* Pods-VPInternationalization-dummy.m */; };
-		BA9A6804D1B811D78AF110EC /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EE99517982A60E457F5622 /* Pods-Tests-dummy.m */; };
-		BE357ADF935078A93CFDD843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B067381202766D88910213A9 /* Foundation.framework */; };
-		D58E04B3847398459046E53C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B067381202766D88910213A9 /* Foundation.framework */; };
-		E16B9D731ABCC8B300F69552 /* UILabel+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B9D6C1ABCC8B300F69552 /* UILabel+Localization.m */; };
-		E16B9D741ABCC8B300F69552 /* UITextField+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B9D6E1ABCC8B300F69552 /* UITextField+Localization.m */; };
-		E16B9D751ABCC8B300F69552 /* UITextView+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B9D701ABCC8B300F69552 /* UITextView+Localization.m */; };
-		E16B9D771ABCC8DF00F69552 /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B9D681ABCC8B300F69552 /* LocalizationManager.m */; };
-		E16B9D7A1ABCC91300F69552 /* UIButton+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B9D6A1ABCC8B300F69552 /* UIButton+Localization.m */; };
-		E16B9D7B1ABCC93800F69552 /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B9D681ABCC8B300F69552 /* LocalizationManager.m */; };
-		E16B9D7C1ABCC93C00F69552 /* UIButton+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B9D6A1ABCC8B300F69552 /* UIButton+Localization.m */; };
-		E16B9D7D1ABCC93F00F69552 /* UILabel+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B9D6C1ABCC8B300F69552 /* UILabel+Localization.m */; };
-		E16B9D7E1ABCC94100F69552 /* UITextField+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B9D6E1ABCC8B300F69552 /* UITextField+Localization.m */; };
-		E16B9D7F1ABCC94400F69552 /* UITextView+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B9D701ABCC8B300F69552 /* UITextView+Localization.m */; };
+		34BC3C66F7D0ED0B981BE71D6F0CE15F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2B5C24D755F2A3DBAC912E88C088CD /* Foundation.framework */; };
+		4FDA2E2EACF28769AF2E186D17E3D5FB /* VPInternationalization-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2B8B149159BBAB0E211BDBAC0584C0 /* VPInternationalization-dummy.m */; };
+		6CFDED503984E5DE2FC2007BAB103A6D /* Pods-VPInternationalization-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B241B9782041DEBAB47B9C1EFF7081C /* Pods-VPInternationalization-dummy.m */; };
+		89E3B8A52FDF0684A13E2BC66D973074 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2B5C24D755F2A3DBAC912E88C088CD /* Foundation.framework */; };
+		9A038A2D8560364C89DC9CF3D4DDDAEA /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4ADBF3006720F80A5766CB9B278A1 /* Pods-Tests-dummy.m */; };
+		E1F1EA351B8A554C00C6E8F8 /* LocalizationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F1EA251B8A554C00C6E8F8 /* LocalizationManager.h */; };
+		E1F1EA361B8A554C00C6E8F8 /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA261B8A554C00C6E8F8 /* LocalizationManager.m */; };
+		E1F1EA371B8A554C00C6E8F8 /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA261B8A554C00C6E8F8 /* LocalizationManager.m */; };
+		E1F1EA381B8A554C00C6E8F8 /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA261B8A554C00C6E8F8 /* LocalizationManager.m */; };
+		E1F1EA391B8A554C00C6E8F8 /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA261B8A554C00C6E8F8 /* LocalizationManager.m */; };
+		E1F1EA3A1B8A554C00C6E8F8 /* NSObject+Localization.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F1EA271B8A554C00C6E8F8 /* NSObject+Localization.h */; };
+		E1F1EA3B1B8A554C00C6E8F8 /* NSObject+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA281B8A554C00C6E8F8 /* NSObject+Localization.m */; };
+		E1F1EA3C1B8A554C00C6E8F8 /* NSObject+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA281B8A554C00C6E8F8 /* NSObject+Localization.m */; };
+		E1F1EA3D1B8A554C00C6E8F8 /* NSObject+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA281B8A554C00C6E8F8 /* NSObject+Localization.m */; };
+		E1F1EA3E1B8A554C00C6E8F8 /* NSObject+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA281B8A554C00C6E8F8 /* NSObject+Localization.m */; };
+		E1F1EA3F1B8A554C00C6E8F8 /* UIButton+Localization.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F1EA291B8A554C00C6E8F8 /* UIButton+Localization.h */; };
+		E1F1EA401B8A554C00C6E8F8 /* UIButton+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2A1B8A554C00C6E8F8 /* UIButton+Localization.m */; };
+		E1F1EA411B8A554C00C6E8F8 /* UIButton+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2A1B8A554C00C6E8F8 /* UIButton+Localization.m */; };
+		E1F1EA421B8A554C00C6E8F8 /* UIButton+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2A1B8A554C00C6E8F8 /* UIButton+Localization.m */; };
+		E1F1EA431B8A554C00C6E8F8 /* UIButton+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2A1B8A554C00C6E8F8 /* UIButton+Localization.m */; };
+		E1F1EA441B8A554C00C6E8F8 /* UILabel+Localization.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F1EA2B1B8A554C00C6E8F8 /* UILabel+Localization.h */; };
+		E1F1EA451B8A554C00C6E8F8 /* UILabel+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2C1B8A554C00C6E8F8 /* UILabel+Localization.m */; };
+		E1F1EA461B8A554C00C6E8F8 /* UILabel+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2C1B8A554C00C6E8F8 /* UILabel+Localization.m */; };
+		E1F1EA471B8A554C00C6E8F8 /* UILabel+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2C1B8A554C00C6E8F8 /* UILabel+Localization.m */; };
+		E1F1EA481B8A554C00C6E8F8 /* UILabel+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2C1B8A554C00C6E8F8 /* UILabel+Localization.m */; };
+		E1F1EA491B8A554C00C6E8F8 /* UITextField+Localization.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F1EA2D1B8A554C00C6E8F8 /* UITextField+Localization.h */; };
+		E1F1EA4A1B8A554C00C6E8F8 /* UITextField+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2E1B8A554C00C6E8F8 /* UITextField+Localization.m */; };
+		E1F1EA4B1B8A554C00C6E8F8 /* UITextField+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2E1B8A554C00C6E8F8 /* UITextField+Localization.m */; };
+		E1F1EA4C1B8A554C00C6E8F8 /* UITextField+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2E1B8A554C00C6E8F8 /* UITextField+Localization.m */; };
+		E1F1EA4D1B8A554C00C6E8F8 /* UITextField+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2E1B8A554C00C6E8F8 /* UITextField+Localization.m */; };
+		E1F1EA4E1B8A554C00C6E8F8 /* UITextView+Localization.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F1EA2F1B8A554C00C6E8F8 /* UITextView+Localization.h */; };
+		E1F1EA4F1B8A554C00C6E8F8 /* UITextView+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA301B8A554C00C6E8F8 /* UITextView+Localization.m */; };
+		E1F1EA501B8A554C00C6E8F8 /* UITextView+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA301B8A554C00C6E8F8 /* UITextView+Localization.m */; };
+		E1F1EA511B8A554C00C6E8F8 /* UITextView+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA301B8A554C00C6E8F8 /* UITextView+Localization.m */; };
+		E1F1EA521B8A554C00C6E8F8 /* UITextView+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA301B8A554C00C6E8F8 /* UITextView+Localization.m */; };
+		E1F1EA531B8A554C00C6E8F8 /* UIViewController+Localization.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F1EA311B8A554C00C6E8F8 /* UIViewController+Localization.h */; };
+		E1F1EA541B8A554C00C6E8F8 /* UIViewController+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA321B8A554C00C6E8F8 /* UIViewController+Localization.m */; };
+		E1F1EA551B8A554C00C6E8F8 /* UIViewController+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA321B8A554C00C6E8F8 /* UIViewController+Localization.m */; };
+		E1F1EA561B8A554C00C6E8F8 /* UIViewController+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA321B8A554C00C6E8F8 /* UIViewController+Localization.m */; };
+		E1F1EA571B8A554C00C6E8F8 /* UIViewController+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA321B8A554C00C6E8F8 /* UIViewController+Localization.m */; };
+		E1F1EA581B8A554C00C6E8F8 /* VPInternationalization.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F1EA331B8A554C00C6E8F8 /* VPInternationalization.h */; };
+		FF2EA67A4D6AE6B55A66E8E13ACD9FE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2B5C24D755F2A3DBAC912E88C088CD /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DA857F394AE992AAAE92A4DA /* PBXContainerItemProxy */ = {
+		88641BD944DA287AF7C48F493E852127 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1A718A176CDA003F3E9C7A46 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 63AEC7E8D404EFBDFCF83E57;
-			remoteInfo = "Pods-VPInternationalization-VPInternationalization-VPInternationalization";
+			remoteGlobalIDString = FB2CF2C82029B0D7A7E37809BF45813A;
+			remoteInfo = "VPInternationalization-VPInternationalization";
 		};
-		EF1F7BC3325024E0F086C374 /* PBXContainerItemProxy */ = {
+		8D980EEC3B3FEBA5120776AA282EB863 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1A718A176CDA003F3E9C7A46 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A46683D55B9278B1B6C50262;
-			remoteInfo = "Pods-Tests-VPInternationalization-VPInternationalization";
+			remoteGlobalIDString = A4EC5405AB3D9543B366EEE7FF75C7C8;
+			remoteInfo = VPInternationalization;
+		};
+		C85369F911ADA69746C910156726FCE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4EC5405AB3D9543B366EEE7FF75C7C8;
+			remoteInfo = VPInternationalization;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		13F29DF6793F48D1EA8C4463 /* VPInternationalization.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VPInternationalization.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		298D62179DF1FFD48D267B3C /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
-		337915CFF544B473377006E7 /* Pods-VPInternationalization-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VPInternationalization-resources.sh"; sourceTree = "<group>"; };
-		4705B338F40D6B664283AFDE /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5494EE859C01A467E54862A1 /* Pods-VPInternationalization-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VPInternationalization-acknowledgements.plist"; sourceTree = "<group>"; };
-		6115CC70C04795A53CBAEBEE /* Pods-VPInternationalization.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VPInternationalization.debug.xcconfig"; sourceTree = "<group>"; };
-		7D9B982D0007F12DC7C3FB03 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9FBBC03BE6C9A9662CFDCA9D /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A92D59B339C61D7F35FD4444 /* Pods-VPInternationalization-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VPInternationalization-acknowledgements.markdown"; sourceTree = "<group>"; };
-		ABE5E5883663521B1445EB2A /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B067381202766D88910213A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		BF2A838A24916BB2784561CD /* Pods-VPInternationalization-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VPInternationalization-environment.h"; sourceTree = "<group>"; };
-		C7B96AF2160C354A6C35C65D /* libPods-VPInternationalization.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VPInternationalization.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8EE99517982A60E457F5622 /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
-		CE6E7C09B6C83F79C3EA2808 /* Pods-VPInternationalization-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VPInternationalization-dummy.m"; sourceTree = "<group>"; };
-		D77777AE57D85DE9C8B1E955 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D7E89C1E6EF8FF95DF5C1CC4 /* Pods-VPInternationalization.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VPInternationalization.release.xcconfig"; sourceTree = "<group>"; };
-		E16B9D671ABCC8B300F69552 /* LocalizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocalizationManager.h; path = Pod/Classes/LocalizationManager.h; sourceTree = "<group>"; };
-		E16B9D681ABCC8B300F69552 /* LocalizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocalizationManager.m; path = Pod/Classes/LocalizationManager.m; sourceTree = "<group>"; };
-		E16B9D691ABCC8B300F69552 /* UIButton+Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+Localization.h"; path = "Pod/Classes/UIButton+Localization.h"; sourceTree = "<group>"; };
-		E16B9D6A1ABCC8B300F69552 /* UIButton+Localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Localization.m"; path = "Pod/Classes/UIButton+Localization.m"; sourceTree = "<group>"; };
-		E16B9D6B1ABCC8B300F69552 /* UILabel+Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+Localization.h"; path = "Pod/Classes/UILabel+Localization.h"; sourceTree = "<group>"; };
-		E16B9D6C1ABCC8B300F69552 /* UILabel+Localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Localization.m"; path = "Pod/Classes/UILabel+Localization.m"; sourceTree = "<group>"; };
-		E16B9D6D1ABCC8B300F69552 /* UITextField+Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextField+Localization.h"; path = "Pod/Classes/UITextField+Localization.h"; sourceTree = "<group>"; };
-		E16B9D6E1ABCC8B300F69552 /* UITextField+Localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextField+Localization.m"; path = "Pod/Classes/UITextField+Localization.m"; sourceTree = "<group>"; };
-		E16B9D6F1ABCC8B300F69552 /* UITextView+Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextView+Localization.h"; path = "Pod/Classes/UITextView+Localization.h"; sourceTree = "<group>"; };
-		E16B9D701ABCC8B300F69552 /* UITextView+Localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextView+Localization.m"; path = "Pod/Classes/UITextView+Localization.m"; sourceTree = "<group>"; };
-		E3F045553D756CD800D06F98 /* VPInternationalization.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VPInternationalization.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		F11619ED83C53CDD4B62A79B /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
-		F261B84B0094438D82DF0149 /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		02611EE2C050EE0876F99EEA1EE1407B /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		087B29F13713DAB54BBFE07F60C018DE /* VPInternationalization-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "VPInternationalization-Private.xcconfig"; sourceTree = "<group>"; };
+		1B4765AE8C39F12ECDA81B217511A396 /* Pods-VPInternationalization-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VPInternationalization-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1C977346B58B44E79DA0A8731D29D7E7 /* VPInternationalization-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VPInternationalization-prefix.pch"; sourceTree = "<group>"; };
+		2F1A68D6802C98484AD92E19C99B7883 /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
+		3D2B8B149159BBAB0E211BDBAC0584C0 /* VPInternationalization-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VPInternationalization-dummy.m"; sourceTree = "<group>"; };
+		3F3C6D491D61BA7889D0094A4BECF8AD /* VPInternationalization.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VPInternationalization.xcconfig; sourceTree = "<group>"; };
+		651874977F2092595A1BF19B34FD34B9 /* Pods-VPInternationalization.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VPInternationalization.debug.xcconfig"; sourceTree = "<group>"; };
+		7B241B9782041DEBAB47B9C1EFF7081C /* Pods-VPInternationalization-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VPInternationalization-dummy.m"; sourceTree = "<group>"; };
+		8CB4ADBF3006720F80A5766CB9B278A1 /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
+		977CEB121A6F92D77460A6216BBF65AB /* Pods-VPInternationalization.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VPInternationalization.release.xcconfig"; sourceTree = "<group>"; };
+		A43E144B96E0C3FCFC6CD49E9167A5D5 /* libVPInternationalization.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVPInternationalization.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3DBBE46B1FA13F7E5B514049ECF08F5 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B76E8D8F85CD5F637A4F0B0A5FCA0024 /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C3B1885CD4E4AFDAD5D0A8586A0D37C4 /* libPods-VPInternationalization.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VPInternationalization.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0579F12D4DCD28289F79A2D3FADE94 /* Pods-VPInternationalization-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VPInternationalization-resources.sh"; sourceTree = "<group>"; };
+		DB99BD75FF7200F2054DEA6F29CACFED /* VPInternationalization.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VPInternationalization.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E134ED9E0DAA0872518BD144DD912F1E /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E1F1EA251B8A554C00C6E8F8 /* LocalizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizationManager.h; sourceTree = "<group>"; };
+		E1F1EA261B8A554C00C6E8F8 /* LocalizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizationManager.m; sourceTree = "<group>"; };
+		E1F1EA271B8A554C00C6E8F8 /* NSObject+Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Localization.h"; sourceTree = "<group>"; };
+		E1F1EA281B8A554C00C6E8F8 /* NSObject+Localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Localization.m"; sourceTree = "<group>"; };
+		E1F1EA291B8A554C00C6E8F8 /* UIButton+Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Localization.h"; sourceTree = "<group>"; };
+		E1F1EA2A1B8A554C00C6E8F8 /* UIButton+Localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Localization.m"; sourceTree = "<group>"; };
+		E1F1EA2B1B8A554C00C6E8F8 /* UILabel+Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Localization.h"; sourceTree = "<group>"; };
+		E1F1EA2C1B8A554C00C6E8F8 /* UILabel+Localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Localization.m"; sourceTree = "<group>"; };
+		E1F1EA2D1B8A554C00C6E8F8 /* UITextField+Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Localization.h"; sourceTree = "<group>"; };
+		E1F1EA2E1B8A554C00C6E8F8 /* UITextField+Localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Localization.m"; sourceTree = "<group>"; };
+		E1F1EA2F1B8A554C00C6E8F8 /* UITextView+Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Localization.h"; sourceTree = "<group>"; };
+		E1F1EA301B8A554C00C6E8F8 /* UITextView+Localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Localization.m"; sourceTree = "<group>"; };
+		E1F1EA311B8A554C00C6E8F8 /* UIViewController+Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Localization.h"; sourceTree = "<group>"; };
+		E1F1EA321B8A554C00C6E8F8 /* UIViewController+Localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Localization.m"; sourceTree = "<group>"; };
+		E1F1EA331B8A554C00C6E8F8 /* VPInternationalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPInternationalization.h; sourceTree = "<group>"; };
+		F1BFB5B84BCC31BF918CDC8402A88C07 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCAD8A26BC51631BF29207717EFFD5D9 /* Pods-VPInternationalization-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VPInternationalization-acknowledgements.plist"; sourceTree = "<group>"; };
+		FF2B5C24D755F2A3DBAC912E88C088CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		28029549E228E92664089E80 /* Frameworks */ = {
+		014B5FF0D7F1E0B7A91977BE1FDBD2C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B617ABA9B959B63A918D479 /* Frameworks */ = {
+		43546F09D1A829AA6E23161B2FBAEFD7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D58E04B3847398459046E53C /* Foundation.framework in Frameworks */,
+				FF2EA67A4D6AE6B55A66E8E13ACD9FE2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		69AB293E641E094EF24582E3 /* Frameworks */ = {
+		5DE57F9B2F61E695CD326C21D17410EF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE357ADF935078A93CFDD843 /* Foundation.framework in Frameworks */,
+				89E3B8A52FDF0684A13E2BC66D973074 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF031D783CBAAA692E4F7717 /* Frameworks */ = {
+		6340D92C552A225029AA1858EA799E48 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34BC3C66F7D0ED0B981BE71D6F0CE15F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4543E1536D37B8A60AA72499 /* Development Pods */ = {
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				507C488C553E5278FCA32C9A /* VPInternationalization */,
+				FF2B5C24D755F2A3DBAC912E88C088CD /* Foundation.framework */,
 			);
-			name = "Development Pods";
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		49738F798141C9319C2F7596 /* Pods-Tests */ = {
+		541DDA5CC95CC61CD870253886C577B0 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				ABE5E5883663521B1445EB2A /* Pods-Tests-acknowledgements.markdown */,
-				F261B84B0094438D82DF0149 /* Pods-Tests-acknowledgements.plist */,
-				C8EE99517982A60E457F5622 /* Pods-Tests-dummy.m */,
-				298D62179DF1FFD48D267B3C /* Pods-Tests-environment.h */,
-				F11619ED83C53CDD4B62A79B /* Pods-Tests-resources.sh */,
-				D77777AE57D85DE9C8B1E955 /* Pods-Tests.debug.xcconfig */,
-				9FBBC03BE6C9A9662CFDCA9D /* Pods-Tests.release.xcconfig */,
+				6F1206FC8251314C4032AB84460A2E37 /* Pods-Tests */,
+				8529E9EBCA213312A4C2CFB54E961F90 /* Pods-VPInternationalization */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		677920927C52E529997C915E1CAB4B25 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F3C6D491D61BA7889D0094A4BECF8AD /* VPInternationalization.xcconfig */,
+				087B29F13713DAB54BBFE07F60C018DE /* VPInternationalization-Private.xcconfig */,
+				3D2B8B149159BBAB0E211BDBAC0584C0 /* VPInternationalization-dummy.m */,
+				1C977346B58B44E79DA0A8731D29D7E7 /* VPInternationalization-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/VPInternationalization";
+			sourceTree = "<group>";
+		};
+		6F1206FC8251314C4032AB84460A2E37 /* Pods-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B76E8D8F85CD5F637A4F0B0A5FCA0024 /* Pods-Tests-acknowledgements.markdown */,
+				02611EE2C050EE0876F99EEA1EE1407B /* Pods-Tests-acknowledgements.plist */,
+				8CB4ADBF3006720F80A5766CB9B278A1 /* Pods-Tests-dummy.m */,
+				2F1A68D6802C98484AD92E19C99B7883 /* Pods-Tests-resources.sh */,
+				B3DBBE46B1FA13F7E5B514049ECF08F5 /* Pods-Tests.debug.xcconfig */,
+				E134ED9E0DAA0872518BD144DD912F1E /* Pods-Tests.release.xcconfig */,
 			);
 			name = "Pods-Tests";
 			path = "Target Support Files/Pods-Tests";
 			sourceTree = "<group>";
 		};
-		503F11A0FB5F70833D55721F /* Pods-VPInternationalization */ = {
+		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				A92D59B339C61D7F35FD4444 /* Pods-VPInternationalization-acknowledgements.markdown */,
-				5494EE859C01A467E54862A1 /* Pods-VPInternationalization-acknowledgements.plist */,
-				CE6E7C09B6C83F79C3EA2808 /* Pods-VPInternationalization-dummy.m */,
-				BF2A838A24916BB2784561CD /* Pods-VPInternationalization-environment.h */,
-				337915CFF544B473377006E7 /* Pods-VPInternationalization-resources.sh */,
-				6115CC70C04795A53CBAEBEE /* Pods-VPInternationalization.debug.xcconfig */,
-				D7E89C1E6EF8FF95DF5C1CC4 /* Pods-VPInternationalization.release.xcconfig */,
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				E8ADBFD584570D240AD5280EE7C34A9C /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				541DDA5CC95CC61CD870253886C577B0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8529E9EBCA213312A4C2CFB54E961F90 /* Pods-VPInternationalization */ = {
+			isa = PBXGroup;
+			children = (
+				1B4765AE8C39F12ECDA81B217511A396 /* Pods-VPInternationalization-acknowledgements.markdown */,
+				FCAD8A26BC51631BF29207717EFFD5D9 /* Pods-VPInternationalization-acknowledgements.plist */,
+				7B241B9782041DEBAB47B9C1EFF7081C /* Pods-VPInternationalization-dummy.m */,
+				CE0579F12D4DCD28289F79A2D3FADE94 /* Pods-VPInternationalization-resources.sh */,
+				651874977F2092595A1BF19B34FD34B9 /* Pods-VPInternationalization.debug.xcconfig */,
+				977CEB121A6F92D77460A6216BBF65AB /* Pods-VPInternationalization.release.xcconfig */,
 			);
 			name = "Pods-VPInternationalization";
 			path = "Target Support Files/Pods-VPInternationalization";
 			sourceTree = "<group>";
 		};
-		507C488C553E5278FCA32C9A /* VPInternationalization */ = {
+		8BD643102D0E04DFB9952F53496EFCF4 /* VPInternationalization */ = {
 			isa = PBXGroup;
 			children = (
-				E16B9D671ABCC8B300F69552 /* LocalizationManager.h */,
-				E16B9D681ABCC8B300F69552 /* LocalizationManager.m */,
-				E16B9D691ABCC8B300F69552 /* UIButton+Localization.h */,
-				E16B9D6A1ABCC8B300F69552 /* UIButton+Localization.m */,
-				E16B9D6B1ABCC8B300F69552 /* UILabel+Localization.h */,
-				E16B9D6C1ABCC8B300F69552 /* UILabel+Localization.m */,
-				E16B9D6D1ABCC8B300F69552 /* UITextField+Localization.h */,
-				E16B9D6E1ABCC8B300F69552 /* UITextField+Localization.m */,
-				E16B9D6F1ABCC8B300F69552 /* UITextView+Localization.h */,
-				E16B9D701ABCC8B300F69552 /* UITextView+Localization.m */,
+				F26FCEF1877DBA22367543F3A015B2DE /* Pod */,
+				677920927C52E529997C915E1CAB4B25 /* Support Files */,
 			);
 			name = VPInternationalization;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		7027431E9040B7AA8A0A459A /* Targets Support Files */ = {
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				49738F798141C9319C2F7596 /* Pods-Tests */,
-				503F11A0FB5F70833D55721F /* Pods-VPInternationalization */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		77AE89BDEFF1DD4982813ED7 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				B067381202766D88910213A9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		D5C78A7362CFF47DB0404D55 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				13F29DF6793F48D1EA8C4463 /* VPInternationalization.bundle */,
-				E3F045553D756CD800D06F98 /* VPInternationalization.bundle */,
-				4705B338F40D6B664283AFDE /* libPods-Tests.a */,
-				C7B96AF2160C354A6C35C65D /* libPods-VPInternationalization.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E9ABFC3BF7354914ACFB0D08 = {
-			isa = PBXGroup;
-			children = (
-				7D9B982D0007F12DC7C3FB03 /* Podfile */,
-				4543E1536D37B8A60AA72499 /* Development Pods */,
-				FBF3ADD0765F66E1B730D293 /* Frameworks */,
-				D5C78A7362CFF47DB0404D55 /* Products */,
-				7027431E9040B7AA8A0A459A /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		FBF3ADD0765F66E1B730D293 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				77AE89BDEFF1DD4982813ED7 /* iOS */,
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB99BD75FF7200F2054DEA6F29CACFED /* VPInternationalization.bundle */,
+				F1BFB5B84BCC31BF918CDC8402A88C07 /* libPods-Tests.a */,
+				C3B1885CD4E4AFDAD5D0A8586A0D37C4 /* libPods-VPInternationalization.a */,
+				A43E144B96E0C3FCFC6CD49E9167A5D5 /* libVPInternationalization.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1F1EA231B8A554C00C6E8F8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E1F1EA331B8A554C00C6E8F8 /* VPInternationalization.h */,
+				E1F1EA251B8A554C00C6E8F8 /* LocalizationManager.h */,
+				E1F1EA261B8A554C00C6E8F8 /* LocalizationManager.m */,
+				E1F1EA271B8A554C00C6E8F8 /* NSObject+Localization.h */,
+				E1F1EA281B8A554C00C6E8F8 /* NSObject+Localization.m */,
+				E1F1EA291B8A554C00C6E8F8 /* UIButton+Localization.h */,
+				E1F1EA2A1B8A554C00C6E8F8 /* UIButton+Localization.m */,
+				E1F1EA2B1B8A554C00C6E8F8 /* UILabel+Localization.h */,
+				E1F1EA2C1B8A554C00C6E8F8 /* UILabel+Localization.m */,
+				E1F1EA2D1B8A554C00C6E8F8 /* UITextField+Localization.h */,
+				E1F1EA2E1B8A554C00C6E8F8 /* UITextField+Localization.m */,
+				E1F1EA2F1B8A554C00C6E8F8 /* UITextView+Localization.h */,
+				E1F1EA301B8A554C00C6E8F8 /* UITextView+Localization.m */,
+				E1F1EA311B8A554C00C6E8F8 /* UIViewController+Localization.h */,
+				E1F1EA321B8A554C00C6E8F8 /* UIViewController+Localization.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E8ADBFD584570D240AD5280EE7C34A9C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BD643102D0E04DFB9952F53496EFCF4 /* VPInternationalization */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F26FCEF1877DBA22367543F3A015B2DE /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				E1F1EA231B8A554C00C6E8F8 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
-/* Begin PBXNativeTarget section */
-		63AEC7E8D404EFBDFCF83E57 /* Pods-VPInternationalization-VPInternationalization-VPInternationalization */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0AED8CEDEAB5D317659901FD /* Build configuration list for PBXNativeTarget "Pods-VPInternationalization-VPInternationalization-VPInternationalization" */;
-			buildPhases = (
-				5709BB6FB32510E617F35351 /* Sources */,
-				28029549E228E92664089E80 /* Frameworks */,
-				88D5A90636BEED0EE12F1707 /* Resources */,
+/* Begin PBXHeadersBuildPhase section */
+		44AE742A985BBB2BBEB1981820D71939 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1F1EA491B8A554C00C6E8F8 /* UITextField+Localization.h in Headers */,
+				E1F1EA4E1B8A554C00C6E8F8 /* UITextView+Localization.h in Headers */,
+				E1F1EA581B8A554C00C6E8F8 /* VPInternationalization.h in Headers */,
+				E1F1EA351B8A554C00C6E8F8 /* LocalizationManager.h in Headers */,
+				E1F1EA3F1B8A554C00C6E8F8 /* UIButton+Localization.h in Headers */,
+				E1F1EA441B8A554C00C6E8F8 /* UILabel+Localization.h in Headers */,
+				E1F1EA531B8A554C00C6E8F8 /* UIViewController+Localization.h in Headers */,
+				E1F1EA3A1B8A554C00C6E8F8 /* NSObject+Localization.h in Headers */,
 			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-VPInternationalization-VPInternationalization-VPInternationalization";
-			productName = "Pods-VPInternationalization-VPInternationalization-VPInternationalization";
-			productReference = E3F045553D756CD800D06F98 /* VPInternationalization.bundle */;
-			productType = "com.apple.product-type.bundle";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64333EDC91C6DF637D1B62F6 /* Pods-VPInternationalization */ = {
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		110E6A9676854BFBC3D50320A14338DD /* Pods-VPInternationalization */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFACDC3CC2A795A546BF66C7 /* Build configuration list for PBXNativeTarget "Pods-VPInternationalization" */;
+			buildConfigurationList = 2B2C7FC50F6EB7FCE876ABC0C08DE0AA /* Build configuration list for PBXNativeTarget "Pods-VPInternationalization" */;
 			buildPhases = (
-				B4640352E40EC3053FD44BB3 /* Sources */,
-				4B617ABA9B959B63A918D479 /* Frameworks */,
+				F26BCFD81FA75BB926329299539BEECF /* Sources */,
+				6340D92C552A225029AA1858EA799E48 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AA474DD91175AA2F7A788999 /* PBXTargetDependency */,
+				B4C6E70CE7120762425CE08DA577259F /* PBXTargetDependency */,
 			);
 			name = "Pods-VPInternationalization";
 			productName = "Pods-VPInternationalization";
-			productReference = C7B96AF2160C354A6C35C65D /* libPods-VPInternationalization.a */;
+			productReference = C3B1885CD4E4AFDAD5D0A8586A0D37C4 /* libPods-VPInternationalization.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		A46683D55B9278B1B6C50262 /* Pods-Tests-VPInternationalization-VPInternationalization */ = {
+		A4EC5405AB3D9543B366EEE7FF75C7C8 /* VPInternationalization */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E7E4D96952FC14F7B5B2D043 /* Build configuration list for PBXNativeTarget "Pods-Tests-VPInternationalization-VPInternationalization" */;
+			buildConfigurationList = 2AD55A27817C20561599245206279458 /* Build configuration list for PBXNativeTarget "VPInternationalization" */;
 			buildPhases = (
-				CA251098A5DB50681F26017E /* Sources */,
-				EF031D783CBAAA692E4F7717 /* Frameworks */,
-				DE1D8735744707B18D0B66D0 /* Resources */,
+				C2263882CAF1E460D42FFB6057FE0E1E /* Sources */,
+				43546F09D1A829AA6E23161B2FBAEFD7 /* Frameworks */,
+				44AE742A985BBB2BBEB1981820D71939 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				77875C8E308BFB51DF5607FADECE5C7B /* PBXTargetDependency */,
 			);
-			name = "Pods-Tests-VPInternationalization-VPInternationalization";
-			productName = "Pods-Tests-VPInternationalization-VPInternationalization";
-			productReference = 13F29DF6793F48D1EA8C4463 /* VPInternationalization.bundle */;
-			productType = "com.apple.product-type.bundle";
+			name = VPInternationalization;
+			productName = VPInternationalization;
+			productReference = A43E144B96E0C3FCFC6CD49E9167A5D5 /* libVPInternationalization.a */;
+			productType = "com.apple.product-type.library.static";
 		};
-		BF8C329DDF68863F609BB237 /* Pods-Tests */ = {
+		B7F9EEAA3A818C2819D0FEA5F4500D40 /* Pods-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0E4D351A07D813FA2024A8C0 /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
+			buildConfigurationList = 32ADF1EEEFE880452385509624B5858C /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
 			buildPhases = (
-				FD99EAB6FED1488CA247CA29 /* Sources */,
-				69AB293E641E094EF24582E3 /* Frameworks */,
+				B35AA20543A1198BE3122F114E4402B9 /* Sources */,
+				5DE57F9B2F61E695CD326C21D17410EF /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C5D2022721BDF1CB6C810449 /* PBXTargetDependency */,
+				090E0E4455E713BBB990F0016A411AF7 /* PBXTargetDependency */,
 			);
 			name = "Pods-Tests";
 			productName = "Pods-Tests";
-			productReference = 4705B338F40D6B664283AFDE /* libPods-Tests.a */;
+			productReference = F1BFB5B84BCC31BF918CDC8402A88C07 /* libPods-Tests.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		FB2CF2C82029B0D7A7E37809BF45813A /* VPInternationalization-VPInternationalization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F55961201CD8280896EB17502FFDB662 /* Build configuration list for PBXNativeTarget "VPInternationalization-VPInternationalization" */;
+			buildPhases = (
+				25DF288DBEAE67AA826069981AA3D0F9 /* Sources */,
+				014B5FF0D7F1E0B7A91977BE1FDBD2C6 /* Frameworks */,
+				1B5433841B89EE04C7AFE7ACAF127531 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VPInternationalization-VPInternationalization";
+			productName = "VPInternationalization-VPInternationalization";
+			productReference = DB99BD75FF7200F2054DEA6F29CACFED /* VPInternationalization.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1A718A176CDA003F3E9C7A46 /* Project object */ = {
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 			};
-			buildConfigurationList = D11F86F481BF1A9A4D1B6BCA /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = E9ABFC3BF7354914ACFB0D08;
-			productRefGroup = D5C78A7362CFF47DB0404D55 /* Products */;
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BF8C329DDF68863F609BB237 /* Pods-Tests */,
-				A46683D55B9278B1B6C50262 /* Pods-Tests-VPInternationalization-VPInternationalization */,
-				64333EDC91C6DF637D1B62F6 /* Pods-VPInternationalization */,
-				63AEC7E8D404EFBDFCF83E57 /* Pods-VPInternationalization-VPInternationalization-VPInternationalization */,
+				B7F9EEAA3A818C2819D0FEA5F4500D40 /* Pods-Tests */,
+				110E6A9676854BFBC3D50320A14338DD /* Pods-VPInternationalization */,
+				A4EC5405AB3D9543B366EEE7FF75C7C8 /* VPInternationalization */,
+				FB2CF2C82029B0D7A7E37809BF45813A /* VPInternationalization-VPInternationalization */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		88D5A90636BEED0EE12F1707 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DE1D8735744707B18D0B66D0 /* Resources */ = {
+		1B5433841B89EE04C7AFE7ACAF127531 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -327,116 +415,92 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5709BB6FB32510E617F35351 /* Sources */ = {
+		25DF288DBEAE67AA826069981AA3D0F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1F1EA4D1B8A554C00C6E8F8 /* UITextField+Localization.m in Sources */,
+				E1F1EA3E1B8A554C00C6E8F8 /* NSObject+Localization.m in Sources */,
+				E1F1EA431B8A554C00C6E8F8 /* UIButton+Localization.m in Sources */,
+				E1F1EA391B8A554C00C6E8F8 /* LocalizationManager.m in Sources */,
+				E1F1EA521B8A554C00C6E8F8 /* UITextView+Localization.m in Sources */,
+				E1F1EA481B8A554C00C6E8F8 /* UILabel+Localization.m in Sources */,
+				E1F1EA571B8A554C00C6E8F8 /* UIViewController+Localization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B4640352E40EC3053FD44BB3 /* Sources */ = {
+		B35AA20543A1198BE3122F114E4402B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E16B9D7E1ABCC94100F69552 /* UITextField+Localization.m in Sources */,
-				E16B9D771ABCC8DF00F69552 /* LocalizationManager.m in Sources */,
-				E16B9D7A1ABCC91300F69552 /* UIButton+Localization.m in Sources */,
-				18BD56BA8B79941CDD3F1CB8 /* Pods-VPInternationalization-dummy.m in Sources */,
-				E16B9D7F1ABCC94400F69552 /* UITextView+Localization.m in Sources */,
-				E16B9D7D1ABCC93F00F69552 /* UILabel+Localization.m in Sources */,
+				E1F1EA4A1B8A554C00C6E8F8 /* UITextField+Localization.m in Sources */,
+				E1F1EA401B8A554C00C6E8F8 /* UIButton+Localization.m in Sources */,
+				E1F1EA4F1B8A554C00C6E8F8 /* UITextView+Localization.m in Sources */,
+				E1F1EA541B8A554C00C6E8F8 /* UIViewController+Localization.m in Sources */,
+				E1F1EA361B8A554C00C6E8F8 /* LocalizationManager.m in Sources */,
+				9A038A2D8560364C89DC9CF3D4DDDAEA /* Pods-Tests-dummy.m in Sources */,
+				E1F1EA3B1B8A554C00C6E8F8 /* NSObject+Localization.m in Sources */,
+				E1F1EA451B8A554C00C6E8F8 /* UILabel+Localization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA251098A5DB50681F26017E /* Sources */ = {
+		C2263882CAF1E460D42FFB6057FE0E1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1F1EA4C1B8A554C00C6E8F8 /* UITextField+Localization.m in Sources */,
+				E1F1EA421B8A554C00C6E8F8 /* UIButton+Localization.m in Sources */,
+				E1F1EA511B8A554C00C6E8F8 /* UITextView+Localization.m in Sources */,
+				E1F1EA561B8A554C00C6E8F8 /* UIViewController+Localization.m in Sources */,
+				E1F1EA381B8A554C00C6E8F8 /* LocalizationManager.m in Sources */,
+				4FDA2E2EACF28769AF2E186D17E3D5FB /* VPInternationalization-dummy.m in Sources */,
+				E1F1EA3D1B8A554C00C6E8F8 /* NSObject+Localization.m in Sources */,
+				E1F1EA471B8A554C00C6E8F8 /* UILabel+Localization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD99EAB6FED1488CA247CA29 /* Sources */ = {
+		F26BCFD81FA75BB926329299539BEECF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E16B9D741ABCC8B300F69552 /* UITextField+Localization.m in Sources */,
-				BA9A6804D1B811D78AF110EC /* Pods-Tests-dummy.m in Sources */,
-				E16B9D751ABCC8B300F69552 /* UITextView+Localization.m in Sources */,
-				E16B9D7B1ABCC93800F69552 /* LocalizationManager.m in Sources */,
-				E16B9D7C1ABCC93C00F69552 /* UIButton+Localization.m in Sources */,
-				E16B9D731ABCC8B300F69552 /* UILabel+Localization.m in Sources */,
+				E1F1EA4B1B8A554C00C6E8F8 /* UITextField+Localization.m in Sources */,
+				E1F1EA411B8A554C00C6E8F8 /* UIButton+Localization.m in Sources */,
+				E1F1EA501B8A554C00C6E8F8 /* UITextView+Localization.m in Sources */,
+				E1F1EA551B8A554C00C6E8F8 /* UIViewController+Localization.m in Sources */,
+				E1F1EA371B8A554C00C6E8F8 /* LocalizationManager.m in Sources */,
+				6CFDED503984E5DE2FC2007BAB103A6D /* Pods-VPInternationalization-dummy.m in Sources */,
+				E1F1EA3C1B8A554C00C6E8F8 /* NSObject+Localization.m in Sources */,
+				E1F1EA461B8A554C00C6E8F8 /* UILabel+Localization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AA474DD91175AA2F7A788999 /* PBXTargetDependency */ = {
+		090E0E4455E713BBB990F0016A411AF7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-VPInternationalization-VPInternationalization-VPInternationalization";
-			target = 63AEC7E8D404EFBDFCF83E57 /* Pods-VPInternationalization-VPInternationalization-VPInternationalization */;
-			targetProxy = DA857F394AE992AAAE92A4DA /* PBXContainerItemProxy */;
+			name = VPInternationalization;
+			target = A4EC5405AB3D9543B366EEE7FF75C7C8 /* VPInternationalization */;
+			targetProxy = 8D980EEC3B3FEBA5120776AA282EB863 /* PBXContainerItemProxy */;
 		};
-		C5D2022721BDF1CB6C810449 /* PBXTargetDependency */ = {
+		77875C8E308BFB51DF5607FADECE5C7B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Tests-VPInternationalization-VPInternationalization";
-			target = A46683D55B9278B1B6C50262 /* Pods-Tests-VPInternationalization-VPInternationalization */;
-			targetProxy = EF1F7BC3325024E0F086C374 /* PBXContainerItemProxy */;
+			name = "VPInternationalization-VPInternationalization";
+			target = FB2CF2C82029B0D7A7E37809BF45813A /* VPInternationalization-VPInternationalization */;
+			targetProxy = 88641BD944DA287AF7C48F493E852127 /* PBXContainerItemProxy */;
+		};
+		B4C6E70CE7120762425CE08DA577259F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VPInternationalization;
+			target = A4EC5405AB3D9543B366EEE7FF75C7C8 /* VPInternationalization */;
+			targetProxy = C85369F911ADA69746C910156726FCE4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		00C61E13E58D40E65C09FAC7 /* Debug */ = {
+		00FC777CF383F8C21F8D3CDCF998F6F6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = VPInternationalization;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		09E615DEBF27C8C54E83A9CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = VPInternationalization;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		164500B9F5C53CF36C320B73 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = VPInternationalization;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		369E21646B8EBEDCFF16FD05 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D77777AE57D85DE9C8B1E955 /* Pods-Tests.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		47FBD8C2228C1E6F86770227 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7E89C1E6EF8FF95DF5C1CC4 /* Pods-VPInternationalization.release.xcconfig */;
+			baseConfigurationReference = E134ED9E0DAA0872518BD144DD912F1E /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -450,23 +514,7 @@
 			};
 			name = Release;
 		};
-		61A71BB2289E18D116707138 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FBBC03BE6C9A9662CFDCA9D /* Pods-Tests.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		90A8896FF8F144537A9E339F /* Release */ = {
+		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -500,7 +548,7 @@
 			};
 			name = Release;
 		};
-		995150DACF18D745F5F12906 /* Debug */ = {
+		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -539,8 +587,9 @@
 			};
 			name = Debug;
 		};
-		B6E2EB90866F269207CE908C /* Debug */ = {
+		1F184313222DCA6E6D5360FDDB204701 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 087B29F13713DAB54BBFE07F60C018DE /* VPInternationalization-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = VPInternationalization;
@@ -550,9 +599,25 @@
 			};
 			name = Debug;
 		};
-		B7A3D5646F708D168FC6B9B3 /* Debug */ = {
+		4A160D9046C30A44691B7195ABF39A1A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6115CC70C04795A53CBAEBEE /* Pods-VPInternationalization.debug.xcconfig */;
+			baseConfigurationReference = 977CEB121A6F92D77460A6216BBF65AB /* Pods-VPInternationalization.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5F0A0112C4E2A1C8E9D7AB66A3B6BF19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3DBBE46B1FA13F7E5B514049ECF08F5 /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -566,55 +631,115 @@
 			};
 			name = Debug;
 		};
+		9837DD03BEADA4303BD28B250E0EE9FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 651874977F2092595A1BF19B34FD34B9 /* Pods-VPInternationalization.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9B978108627D8EF6F870725AF0579084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 087B29F13713DAB54BBFE07F60C018DE /* VPInternationalization-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VPInternationalization/VPInternationalization-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C79F33A5579251DE18997EA3BFC27EDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 087B29F13713DAB54BBFE07F60C018DE /* VPInternationalization-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VPInternationalization/VPInternationalization-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D0523271E28C3A5ABFCC03CC9CEEFA47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 087B29F13713DAB54BBFE07F60C018DE /* VPInternationalization-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = VPInternationalization;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0AED8CEDEAB5D317659901FD /* Build configuration list for PBXNativeTarget "Pods-VPInternationalization-VPInternationalization-VPInternationalization" */ = {
+		2AD55A27817C20561599245206279458 /* Build configuration list for PBXNativeTarget "VPInternationalization" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				00C61E13E58D40E65C09FAC7 /* Debug */,
-				09E615DEBF27C8C54E83A9CF /* Release */,
+				C79F33A5579251DE18997EA3BFC27EDA /* Debug */,
+				9B978108627D8EF6F870725AF0579084 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0E4D351A07D813FA2024A8C0 /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
+		2B2C7FC50F6EB7FCE876ABC0C08DE0AA /* Build configuration list for PBXNativeTarget "Pods-VPInternationalization" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				369E21646B8EBEDCFF16FD05 /* Debug */,
-				61A71BB2289E18D116707138 /* Release */,
+				9837DD03BEADA4303BD28B250E0EE9FC /* Debug */,
+				4A160D9046C30A44691B7195ABF39A1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFACDC3CC2A795A546BF66C7 /* Build configuration list for PBXNativeTarget "Pods-VPInternationalization" */ = {
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B7A3D5646F708D168FC6B9B3 /* Debug */,
-				47FBD8C2228C1E6F86770227 /* Release */,
+				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
+				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D11F86F481BF1A9A4D1B6BCA /* Build configuration list for PBXProject "Pods" */ = {
+		32ADF1EEEFE880452385509624B5858C /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				995150DACF18D745F5F12906 /* Debug */,
-				90A8896FF8F144537A9E339F /* Release */,
+				5F0A0112C4E2A1C8E9D7AB66A3B6BF19 /* Debug */,
+				00FC777CF383F8C21F8D3CDCF998F6F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E7E4D96952FC14F7B5B2D043 /* Build configuration list for PBXNativeTarget "Pods-Tests-VPInternationalization-VPInternationalization" */ = {
+		F55961201CD8280896EB17502FFDB662 /* Build configuration list for PBXNativeTarget "VPInternationalization-VPInternationalization" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B6E2EB90866F269207CE908C /* Debug */,
-				164500B9F5C53CF36C320B73 /* Release */,
+				1F184313222DCA6E6D5360FDDB204701 /* Debug */,
+				D0523271E28C3A5ABFCC03CC9CEEFA47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1A718A176CDA003F3E9C7A46 /* Project object */;
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 }

@@ -1,14 +1,14 @@
 PODS:
-  - VPInternationalization (0.1.0)
+  - VPInternationalization (0.2.0)
 
 DEPENDENCIES:
   - VPInternationalization (from `../`)
 
 EXTERNAL SOURCES:
   VPInternationalization:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  VPInternationalization: 0ff0e63810c08abeb4cbf21d07e26424af68379c
+  VPInternationalization: 98cde0a4274b30c50e66c12623b3bd10c7eff8ab
 
-COCOAPODS: 0.36.0
+COCOAPODS: 0.38.2

@@ -10,10 +10,15 @@
 
 @interface UIButton (Localization)
 
--(void)setLocalizedTitleForKey:(NSString *)localizationKey forState:(UIControlState)state;
-
 //for all states
--(void)setLocalizedTitleForKey:(NSString *)localizationKey;
+@property (nonatomic, strong) IBInspectable NSString *locTitleKey;
+
+//for any state
+-(void)setLocalizedTitleForKey:(NSString *)localizationKey forState:(UIControlState)state;
+-(NSString *)localizationKeyForState:(UIControlState)state;
+
+
+
 
 
 @end

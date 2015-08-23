@@ -7,13 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "UIButton+Localization.h"
-#import "UILabel+Localization.h"
-#import "UITextField+Localization.h"
-#import "UITextView+Localization.h"
 
 #ifndef local
 #define local(s) [LocalizationManager localizedStringForKey:s]
+#endif
+
+#ifndef localFormat
+#define localFormat(s,...) [NSString stringWithFormat:local(s), ##__VA_ARGS__]
 #endif
 
 #ifndef locCurent
@@ -22,46 +22,21 @@
 
 static NSString *LocalizationManagerLanguageDidChangeNotification = @"LocalizationManagerLanguageDidChangedNotification";
 
-/**
- This is used for Storyboard.
- When you put localization key in text input filed of i.e. UILabel, and you might wont to put there more text so you
- can get the feeling how that label is going to look like while editing Storyboard.
- You can use this divider to divide actual localization key from that dummy text you were going to put there.
- Example of use:
- @"localization_key // Lorem ipusm dolar...."
- */
-static NSString *LocalizationKeyToDummyTextDivider = @"//";
-
-/**
- This is used for Storyboard.
- When you don't want some storyboard text to be used as localization key, you can write it like :
- <StoryboardSkipTihsTextPrefix><your text>
- and in the run time StoryboardSkipTihsTextPrefix will be removed so you will see onely <your text>
- as the text of an element you wanted
- */
-static NSString *SkipTihsTextPrefix = @"__";
 
 /**
  Rollback language is language that is used in case current language does not contain certain localization keys.
  It can be turn off and on.
  */
-#define useRollbackLanguage YES
-static NSString *rollbackLanguage = @"en";
 
 @interface LocalizationManager : NSObject
 
-+(instancetype)sharedManager;
-
-
 @property (nonatomic, strong) NSString *language;
 
+#define useDefoultLanguage YES
+@property (nonatomic, assign) BOOL preferePhoneLanguage;//defoult == NO
+@property (nonatomic, strong) NSString *defoultLanguage;//defoult == 'en'
+
++(instancetype)sharedManager;
 +(NSString *)localizedStringForKey:(NSString *)key;
 
-//Used by +Localization.h categories
-+(BOOL)shouldLocalizeForStoryboardString:(NSString *)string;
-+(NSString *)stringWithRemovedSkipingPrefixFromString:(NSString *)string;
-+(NSString *)localizationKeyFromStoryboardString:(NSString *)string;
--(NSString *)localizationKeyForUIElement:(NSString *)element state:(id)state;
--(void)setLocalizationKey:(NSString *)key forUIElement:(NSString *)element state:(id)state;;
--(void)removeLocalizationKeyForUIElement:(NSString *)element state:(id)state;;
 @end

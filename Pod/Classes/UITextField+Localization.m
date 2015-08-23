@@ -8,76 +8,43 @@
 
 #import "UITextField+Localization.h"
 #import "LocalizationManager.h"
+#import "NSObject+Localization.h"
+
+static NSString *titleKey = @"KEY";
+static NSString *placeholderKey = @"PKEY";
 
 @implementation UITextField (Localization)
 
--(void)awakeFromNib
+-(NSString *)locTextKey
 {
-    [super awakeFromNib];
-    
-    if ([LocalizationManager shouldLocalizeForStoryboardString:self.text]) {
-        [self configureStoryboardLocalizationForText];
-    } else {
-        self.text = [LocalizationManager stringWithRemovedSkipingPrefixFromString:self.text];
+    return self.loc_keysDictionary[titleKey];
+}
+
+-(NSString *)locPlaceholderKey
+{
+    return self.loc_keysDictionary[placeholderKey];
+}
+
+-(void)setLocTextKey:(NSString *)locTextKey
+{
+    self.loc_keysDictionary[titleKey] = locTextKey;
+    self.text = local(locTextKey);
+}
+
+-(void)setLocPlaceholderKey:(NSString *)locPlaceholderKey
+{
+    self.loc_keysDictionary[placeholderKey] = locPlaceholderKey;
+    self.placeholder = local(locPlaceholderKey);
+}
+
+-(void)loc_localeDidChanged
+{
+    if (self.locTextKey) {
+        self.text = local(self.locTextKey);
     }
-    if ([LocalizationManager shouldLocalizeForStoryboardString:self.placeholder]) {
-        [self configureStoryboardLocalizationForPlacehoder];
-    } else {
-        self.placeholder = [LocalizationManager stringWithRemovedSkipingPrefixFromString:self.placeholder];
+    if (self.locPlaceholderKey) {
+        self.placeholder = local(self.locPlaceholderKey);
     }
-}
-
--(void)configureStoryboardLocalizationForText
-{
-    NSString *key = [LocalizationManager localizationKeyFromStoryboardString:self.text];
-    [[LocalizationManager sharedManager] setLocalizationKey:key forUIElement:self.description state:@"t"];
-    self.text = local(key);
-}
-
--(void)configureStoryboardLocalizationForPlacehoder
-{
-    NSString *key = [LocalizationManager localizationKeyFromStoryboardString:self.placeholder];
-    [[LocalizationManager sharedManager] setLocalizationKey:key forUIElement:self.description state:@"p"];
-    self.placeholder = local(key);
-}
-
--(void)setLocalizedTextForKey:(NSString *)localizationKey
-{
-    [[LocalizationManager sharedManager] setLocalizationKey:localizationKey forUIElement:self.description state:@"t"] ;
-    [self subscribeForLanguageChange];
-    self.text = local(localizationKey);
-}
-
--(void)setLocalizedPlaceholderForKey:(NSString *)localizationKey
-{
-    [[LocalizationManager sharedManager] setLocalizationKey:localizationKey forUIElement:self.description state:@"p"];
-    [self subscribeForLanguageChange];
-    self.placeholder = local(localizationKey);
-}
-
--(void)subscribeForLanguageChange
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:LocalizationManagerLanguageDidChangeNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(languageChanged) name:LocalizationManagerLanguageDidChangeNotification object:nil];
-}
-
--(void)languageChanged
-{
-    NSString *textKey = [[LocalizationManager sharedManager] localizationKeyForUIElement:self.description state:@"t"];
-    NSString *placeholderKey = [[LocalizationManager sharedManager] localizationKeyForUIElement:self.description state:@"p"];
-    if (textKey) {
-        self.text = local(textKey);
-    }
-    if (placeholderKey) {
-        self.placeholder = local(placeholderKey);
-    }
-}
-
--(void)dealloc
-{
-    [[LocalizationManager sharedManager] removeLocalizationKeyForUIElement:self.description state:@"t"];
-    [[LocalizationManager sharedManager] removeLocalizationKeyForUIElement:self.description state:@"p"];
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:LocalizationManagerLanguageDidChangeNotification object:nil];
 }
 
 @end
