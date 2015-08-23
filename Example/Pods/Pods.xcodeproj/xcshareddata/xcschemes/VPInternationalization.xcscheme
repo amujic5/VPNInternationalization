@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "54A5CF873D35EE6DB4D8AF02"
+               BlueprintIdentifier = "53E56A4A0137183165FFE940"
                BuildableName = "libVPInternationalization.a"
                BlueprintName = "VPInternationalization"
                ReferencedContainer = "container:Pods.xcodeproj">

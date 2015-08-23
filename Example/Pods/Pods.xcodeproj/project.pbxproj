@@ -7,70 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		34BC3C66F7D0ED0B981BE71D6F0CE15F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2B5C24D755F2A3DBAC912E88C088CD /* Foundation.framework */; };
-		4FDA2E2EACF28769AF2E186D17E3D5FB /* VPInternationalization-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2B8B149159BBAB0E211BDBAC0584C0 /* VPInternationalization-dummy.m */; };
+		06720F17886746D4234D49B8DDD3CE32 /* LocalizationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 977E64DCB0F2547F90A3B0856CABD6B6 /* LocalizationManager.h */; };
+		1D46A2FDC34645B5A6ADB59714FF53DB /* VPInternationalization-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B83EE8046635E1BD2BD5539FA9C73955 /* VPInternationalization-dummy.m */; };
+		31CB7B2A3BC76CBE09947064846C3F60 /* NSObject+Localization.h in Headers */ = {isa = PBXBuildFile; fileRef = B830A273712E4EB26D622EAE34D74530 /* NSObject+Localization.h */; };
+		34BC3C66F7D0ED0B981BE71D6F0CE15F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989C5CCDF2985CBE946820EF3458E58B /* Foundation.framework */; };
+		36FE75475CBD7F81549A165198D12860 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989C5CCDF2985CBE946820EF3458E58B /* Foundation.framework */; };
+		3BEA7A607340E3F8F78A904590A6527C /* UITextField+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = 797AFC3F9637B566D051D4C961EC631D /* UITextField+Localization.m */; };
+		486A9A785764B881ABB56CDFA3873B06 /* UITextField+Localization.h in Headers */ = {isa = PBXBuildFile; fileRef = 466FE06E972B2A42DAD131F8EDB79B64 /* UITextField+Localization.h */; };
+		509E64585CDE266D1CE5C0AA7A331A79 /* UITextView+Localization.h in Headers */ = {isa = PBXBuildFile; fileRef = CA660ADB18CEE85ECC143C83809343F8 /* UITextView+Localization.h */; };
+		532673612006E7CE28962A851D71BEBD /* UIButton+Localization.h in Headers */ = {isa = PBXBuildFile; fileRef = 46B7180BAE019376A3052D2B4DFB1627 /* UIButton+Localization.h */; };
+		563B84B494E7966118A14C1E7EF2BDBD /* NSObject+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1C644AB07B50A0A7BB27D25D7A416 /* NSObject+Localization.m */; };
+		621ADC6318EE740E2E7390EA61910EC7 /* UIButton+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DCCDA88F7B3F1112B97E326DD1353A /* UIButton+Localization.m */; };
+		6B6A25B42F02D2E4B77C81509EDB42A9 /* UILabel+Localization.h in Headers */ = {isa = PBXBuildFile; fileRef = 759388EBDEA77C11F407BBC725A422F5 /* UILabel+Localization.h */; };
 		6CFDED503984E5DE2FC2007BAB103A6D /* Pods-VPInternationalization-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B241B9782041DEBAB47B9C1EFF7081C /* Pods-VPInternationalization-dummy.m */; };
-		89E3B8A52FDF0684A13E2BC66D973074 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2B5C24D755F2A3DBAC912E88C088CD /* Foundation.framework */; };
+		7F5F65A252008AA7CBD0AB2327F5147A /* UIViewController+Localization.h in Headers */ = {isa = PBXBuildFile; fileRef = C92BEA498F3BF66818A998EFA2CC2A1E /* UIViewController+Localization.h */; };
+		89E3B8A52FDF0684A13E2BC66D973074 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989C5CCDF2985CBE946820EF3458E58B /* Foundation.framework */; };
+		8C293FAC099554C0F7FECC687CC886DF /* UILabel+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E09B7E934438EF9DADC668E831BDEC4C /* UILabel+Localization.m */; };
 		9A038A2D8560364C89DC9CF3D4DDDAEA /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4ADBF3006720F80A5766CB9B278A1 /* Pods-Tests-dummy.m */; };
-		E1F1EA351B8A554C00C6E8F8 /* LocalizationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F1EA251B8A554C00C6E8F8 /* LocalizationManager.h */; };
-		E1F1EA361B8A554C00C6E8F8 /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA261B8A554C00C6E8F8 /* LocalizationManager.m */; };
-		E1F1EA371B8A554C00C6E8F8 /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA261B8A554C00C6E8F8 /* LocalizationManager.m */; };
-		E1F1EA381B8A554C00C6E8F8 /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA261B8A554C00C6E8F8 /* LocalizationManager.m */; };
-		E1F1EA391B8A554C00C6E8F8 /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA261B8A554C00C6E8F8 /* LocalizationManager.m */; };
-		E1F1EA3A1B8A554C00C6E8F8 /* NSObject+Localization.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F1EA271B8A554C00C6E8F8 /* NSObject+Localization.h */; };
-		E1F1EA3B1B8A554C00C6E8F8 /* NSObject+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA281B8A554C00C6E8F8 /* NSObject+Localization.m */; };
-		E1F1EA3C1B8A554C00C6E8F8 /* NSObject+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA281B8A554C00C6E8F8 /* NSObject+Localization.m */; };
-		E1F1EA3D1B8A554C00C6E8F8 /* NSObject+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA281B8A554C00C6E8F8 /* NSObject+Localization.m */; };
-		E1F1EA3E1B8A554C00C6E8F8 /* NSObject+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA281B8A554C00C6E8F8 /* NSObject+Localization.m */; };
-		E1F1EA3F1B8A554C00C6E8F8 /* UIButton+Localization.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F1EA291B8A554C00C6E8F8 /* UIButton+Localization.h */; };
-		E1F1EA401B8A554C00C6E8F8 /* UIButton+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2A1B8A554C00C6E8F8 /* UIButton+Localization.m */; };
-		E1F1EA411B8A554C00C6E8F8 /* UIButton+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2A1B8A554C00C6E8F8 /* UIButton+Localization.m */; };
-		E1F1EA421B8A554C00C6E8F8 /* UIButton+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2A1B8A554C00C6E8F8 /* UIButton+Localization.m */; };
-		E1F1EA431B8A554C00C6E8F8 /* UIButton+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2A1B8A554C00C6E8F8 /* UIButton+Localization.m */; };
-		E1F1EA441B8A554C00C6E8F8 /* UILabel+Localization.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F1EA2B1B8A554C00C6E8F8 /* UILabel+Localization.h */; };
-		E1F1EA451B8A554C00C6E8F8 /* UILabel+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2C1B8A554C00C6E8F8 /* UILabel+Localization.m */; };
-		E1F1EA461B8A554C00C6E8F8 /* UILabel+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2C1B8A554C00C6E8F8 /* UILabel+Localization.m */; };
-		E1F1EA471B8A554C00C6E8F8 /* UILabel+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2C1B8A554C00C6E8F8 /* UILabel+Localization.m */; };
-		E1F1EA481B8A554C00C6E8F8 /* UILabel+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2C1B8A554C00C6E8F8 /* UILabel+Localization.m */; };
-		E1F1EA491B8A554C00C6E8F8 /* UITextField+Localization.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F1EA2D1B8A554C00C6E8F8 /* UITextField+Localization.h */; };
-		E1F1EA4A1B8A554C00C6E8F8 /* UITextField+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2E1B8A554C00C6E8F8 /* UITextField+Localization.m */; };
-		E1F1EA4B1B8A554C00C6E8F8 /* UITextField+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2E1B8A554C00C6E8F8 /* UITextField+Localization.m */; };
-		E1F1EA4C1B8A554C00C6E8F8 /* UITextField+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2E1B8A554C00C6E8F8 /* UITextField+Localization.m */; };
-		E1F1EA4D1B8A554C00C6E8F8 /* UITextField+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA2E1B8A554C00C6E8F8 /* UITextField+Localization.m */; };
-		E1F1EA4E1B8A554C00C6E8F8 /* UITextView+Localization.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F1EA2F1B8A554C00C6E8F8 /* UITextView+Localization.h */; };
-		E1F1EA4F1B8A554C00C6E8F8 /* UITextView+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA301B8A554C00C6E8F8 /* UITextView+Localization.m */; };
-		E1F1EA501B8A554C00C6E8F8 /* UITextView+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA301B8A554C00C6E8F8 /* UITextView+Localization.m */; };
-		E1F1EA511B8A554C00C6E8F8 /* UITextView+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA301B8A554C00C6E8F8 /* UITextView+Localization.m */; };
-		E1F1EA521B8A554C00C6E8F8 /* UITextView+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA301B8A554C00C6E8F8 /* UITextView+Localization.m */; };
-		E1F1EA531B8A554C00C6E8F8 /* UIViewController+Localization.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F1EA311B8A554C00C6E8F8 /* UIViewController+Localization.h */; };
-		E1F1EA541B8A554C00C6E8F8 /* UIViewController+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA321B8A554C00C6E8F8 /* UIViewController+Localization.m */; };
-		E1F1EA551B8A554C00C6E8F8 /* UIViewController+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA321B8A554C00C6E8F8 /* UIViewController+Localization.m */; };
-		E1F1EA561B8A554C00C6E8F8 /* UIViewController+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA321B8A554C00C6E8F8 /* UIViewController+Localization.m */; };
-		E1F1EA571B8A554C00C6E8F8 /* UIViewController+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EA321B8A554C00C6E8F8 /* UIViewController+Localization.m */; };
-		E1F1EA581B8A554C00C6E8F8 /* VPInternationalization.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F1EA331B8A554C00C6E8F8 /* VPInternationalization.h */; };
-		FF2EA67A4D6AE6B55A66E8E13ACD9FE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2B5C24D755F2A3DBAC912E88C088CD /* Foundation.framework */; };
+		B3A28211207D70AC6999BCCCEED5C18A /* UITextView+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = A68D8D0433BF6096A08B5C065E61CCFB /* UITextView+Localization.m */; };
+		E95CF1D447109873C07CF7692CEAF1C2 /* UIViewController+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7239830331B6F5633C5EF4F949B97A /* UIViewController+Localization.m */; };
+		F22F75E9F9111C935D595FA557E9EF40 /* VPInternationalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 985EA611A3D04B930DAB602020E370B9 /* VPInternationalization.h */; };
+		F9EA608163934D59C5ACA74022C3DC9B /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3185F6A9CB4E507854C35E8F868D6F /* LocalizationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		88641BD944DA287AF7C48F493E852127 /* PBXContainerItemProxy */ = {
+		7F03B24B84FAD1809C192612205E0B4D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FB2CF2C82029B0D7A7E37809BF45813A;
 			remoteInfo = "VPInternationalization-VPInternationalization";
 		};
-		8D980EEC3B3FEBA5120776AA282EB863 /* PBXContainerItemProxy */ = {
+		990422E3876E9D75E2A3AEA46F44CA22 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A4EC5405AB3D9543B366EEE7FF75C7C8;
+			remoteGlobalIDString = E170E628BE4BB8EC31586EB635B32DF0;
 			remoteInfo = VPInternationalization;
 		};
-		C85369F911ADA69746C910156726FCE4 /* PBXContainerItemProxy */ = {
+		A55892165A8B922385D3FFA407FA6F9C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A4EC5405AB3D9543B366EEE7FF75C7C8;
+			remoteGlobalIDString = E170E628BE4BB8EC31586EB635B32DF0;
 			remoteInfo = VPInternationalization;
 		};
 /* End PBXContainerItemProxy section */
@@ -80,39 +59,39 @@
 		087B29F13713DAB54BBFE07F60C018DE /* VPInternationalization-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "VPInternationalization-Private.xcconfig"; sourceTree = "<group>"; };
 		1B4765AE8C39F12ECDA81B217511A396 /* Pods-VPInternationalization-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VPInternationalization-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1C977346B58B44E79DA0A8731D29D7E7 /* VPInternationalization-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VPInternationalization-prefix.pch"; sourceTree = "<group>"; };
+		20DCCDA88F7B3F1112B97E326DD1353A /* UIButton+Localization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Localization.m"; sourceTree = "<group>"; };
 		2F1A68D6802C98484AD92E19C99B7883 /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
-		3D2B8B149159BBAB0E211BDBAC0584C0 /* VPInternationalization-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VPInternationalization-dummy.m"; sourceTree = "<group>"; };
 		3F3C6D491D61BA7889D0094A4BECF8AD /* VPInternationalization.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VPInternationalization.xcconfig; sourceTree = "<group>"; };
+		466FE06E972B2A42DAD131F8EDB79B64 /* UITextField+Localization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+Localization.h"; sourceTree = "<group>"; };
+		46B7180BAE019376A3052D2B4DFB1627 /* UIButton+Localization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+Localization.h"; sourceTree = "<group>"; };
+		5FB1C644AB07B50A0A7BB27D25D7A416 /* NSObject+Localization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Localization.m"; sourceTree = "<group>"; };
 		651874977F2092595A1BF19B34FD34B9 /* Pods-VPInternationalization.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VPInternationalization.debug.xcconfig"; sourceTree = "<group>"; };
+		759388EBDEA77C11F407BBC725A422F5 /* UILabel+Localization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UILabel+Localization.h"; sourceTree = "<group>"; };
+		797AFC3F9637B566D051D4C961EC631D /* UITextField+Localization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Localization.m"; sourceTree = "<group>"; };
 		7B241B9782041DEBAB47B9C1EFF7081C /* Pods-VPInternationalization-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VPInternationalization-dummy.m"; sourceTree = "<group>"; };
 		8CB4ADBF3006720F80A5766CB9B278A1 /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
 		977CEB121A6F92D77460A6216BBF65AB /* Pods-VPInternationalization.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VPInternationalization.release.xcconfig"; sourceTree = "<group>"; };
-		A43E144B96E0C3FCFC6CD49E9167A5D5 /* libVPInternationalization.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVPInternationalization.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		977E64DCB0F2547F90A3B0856CABD6B6 /* LocalizationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LocalizationManager.h; sourceTree = "<group>"; };
+		985EA611A3D04B930DAB602020E370B9 /* VPInternationalization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VPInternationalization.h; sourceTree = "<group>"; };
+		989C5CCDF2985CBE946820EF3458E58B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9B6723137DC1E9BEF51E875B5A6EBAD1 /* libVPInternationalization.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVPInternationalization.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A68D8D0433BF6096A08B5C065E61CCFB /* UITextView+Localization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Localization.m"; sourceTree = "<group>"; };
 		B3DBBE46B1FA13F7E5B514049ECF08F5 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B76E8D8F85CD5F637A4F0B0A5FCA0024 /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B830A273712E4EB26D622EAE34D74530 /* NSObject+Localization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+Localization.h"; sourceTree = "<group>"; };
+		B83EE8046635E1BD2BD5539FA9C73955 /* VPInternationalization-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VPInternationalization-dummy.m"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C3B1885CD4E4AFDAD5D0A8586A0D37C4 /* libPods-VPInternationalization.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VPInternationalization.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C92BEA498F3BF66818A998EFA2CC2A1E /* UIViewController+Localization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Localization.h"; sourceTree = "<group>"; };
+		CA660ADB18CEE85ECC143C83809343F8 /* UITextView+Localization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextView+Localization.h"; sourceTree = "<group>"; };
 		CE0579F12D4DCD28289F79A2D3FADE94 /* Pods-VPInternationalization-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VPInternationalization-resources.sh"; sourceTree = "<group>"; };
 		DB99BD75FF7200F2054DEA6F29CACFED /* VPInternationalization.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VPInternationalization.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E09B7E934438EF9DADC668E831BDEC4C /* UILabel+Localization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Localization.m"; sourceTree = "<group>"; };
 		E134ED9E0DAA0872518BD144DD912F1E /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E1F1EA251B8A554C00C6E8F8 /* LocalizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizationManager.h; sourceTree = "<group>"; };
-		E1F1EA261B8A554C00C6E8F8 /* LocalizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizationManager.m; sourceTree = "<group>"; };
-		E1F1EA271B8A554C00C6E8F8 /* NSObject+Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Localization.h"; sourceTree = "<group>"; };
-		E1F1EA281B8A554C00C6E8F8 /* NSObject+Localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Localization.m"; sourceTree = "<group>"; };
-		E1F1EA291B8A554C00C6E8F8 /* UIButton+Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Localization.h"; sourceTree = "<group>"; };
-		E1F1EA2A1B8A554C00C6E8F8 /* UIButton+Localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Localization.m"; sourceTree = "<group>"; };
-		E1F1EA2B1B8A554C00C6E8F8 /* UILabel+Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Localization.h"; sourceTree = "<group>"; };
-		E1F1EA2C1B8A554C00C6E8F8 /* UILabel+Localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Localization.m"; sourceTree = "<group>"; };
-		E1F1EA2D1B8A554C00C6E8F8 /* UITextField+Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Localization.h"; sourceTree = "<group>"; };
-		E1F1EA2E1B8A554C00C6E8F8 /* UITextField+Localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Localization.m"; sourceTree = "<group>"; };
-		E1F1EA2F1B8A554C00C6E8F8 /* UITextView+Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Localization.h"; sourceTree = "<group>"; };
-		E1F1EA301B8A554C00C6E8F8 /* UITextView+Localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Localization.m"; sourceTree = "<group>"; };
-		E1F1EA311B8A554C00C6E8F8 /* UIViewController+Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Localization.h"; sourceTree = "<group>"; };
-		E1F1EA321B8A554C00C6E8F8 /* UIViewController+Localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Localization.m"; sourceTree = "<group>"; };
-		E1F1EA331B8A554C00C6E8F8 /* VPInternationalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPInternationalization.h; sourceTree = "<group>"; };
+		EE3185F6A9CB4E507854C35E8F868D6F /* LocalizationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LocalizationManager.m; sourceTree = "<group>"; };
 		F1BFB5B84BCC31BF918CDC8402A88C07 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC7239830331B6F5633C5EF4F949B97A /* UIViewController+Localization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Localization.m"; sourceTree = "<group>"; };
 		FCAD8A26BC51631BF29207717EFFD5D9 /* Pods-VPInternationalization-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VPInternationalization-acknowledgements.plist"; sourceTree = "<group>"; };
-		FF2B5C24D755F2A3DBAC912E88C088CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,14 +99,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		43546F09D1A829AA6E23161B2FBAEFD7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FF2EA67A4D6AE6B55A66E8E13ACD9FE2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,13 +118,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E304A3F88421637781D9CAF8B31C064C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36FE75475CBD7F81549A165198D12860 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00B12179E1E7667B64E0E95D8BCA34ED /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				819D2AAE62D9CB283EFD080A95B9A1DF /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
 		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				FF2B5C24D755F2A3DBAC912E88C088CD /* Foundation.framework */,
+				989C5CCDF2985CBE946820EF3458E58B /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -172,7 +159,7 @@
 			children = (
 				3F3C6D491D61BA7889D0094A4BECF8AD /* VPInternationalization.xcconfig */,
 				087B29F13713DAB54BBFE07F60C018DE /* VPInternationalization-Private.xcconfig */,
-				3D2B8B149159BBAB0E211BDBAC0584C0 /* VPInternationalization-dummy.m */,
+				B83EE8046635E1BD2BD5539FA9C73955 /* VPInternationalization-dummy.m */,
 				1C977346B58B44E79DA0A8731D29D7E7 /* VPInternationalization-prefix.pch */,
 			);
 			name = "Support Files";
@@ -204,6 +191,28 @@
 			);
 			sourceTree = "<group>";
 		};
+		819D2AAE62D9CB283EFD080A95B9A1DF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				977E64DCB0F2547F90A3B0856CABD6B6 /* LocalizationManager.h */,
+				EE3185F6A9CB4E507854C35E8F868D6F /* LocalizationManager.m */,
+				B830A273712E4EB26D622EAE34D74530 /* NSObject+Localization.h */,
+				5FB1C644AB07B50A0A7BB27D25D7A416 /* NSObject+Localization.m */,
+				46B7180BAE019376A3052D2B4DFB1627 /* UIButton+Localization.h */,
+				20DCCDA88F7B3F1112B97E326DD1353A /* UIButton+Localization.m */,
+				759388EBDEA77C11F407BBC725A422F5 /* UILabel+Localization.h */,
+				E09B7E934438EF9DADC668E831BDEC4C /* UILabel+Localization.m */,
+				466FE06E972B2A42DAD131F8EDB79B64 /* UITextField+Localization.h */,
+				797AFC3F9637B566D051D4C961EC631D /* UITextField+Localization.m */,
+				CA660ADB18CEE85ECC143C83809343F8 /* UITextView+Localization.h */,
+				A68D8D0433BF6096A08B5C065E61CCFB /* UITextView+Localization.m */,
+				C92BEA498F3BF66818A998EFA2CC2A1E /* UIViewController+Localization.h */,
+				FC7239830331B6F5633C5EF4F949B97A /* UIViewController+Localization.m */,
+				985EA611A3D04B930DAB602020E370B9 /* VPInternationalization.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		8529E9EBCA213312A4C2CFB54E961F90 /* Pods-VPInternationalization */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,7 +230,7 @@
 		8BD643102D0E04DFB9952F53496EFCF4 /* VPInternationalization */ = {
 			isa = PBXGroup;
 			children = (
-				F26FCEF1877DBA22367543F3A015B2DE /* Pod */,
+				00B12179E1E7667B64E0E95D8BCA34ED /* Pod */,
 				677920927C52E529997C915E1CAB4B25 /* Support Files */,
 			);
 			name = VPInternationalization;
@@ -242,31 +251,9 @@
 				DB99BD75FF7200F2054DEA6F29CACFED /* VPInternationalization.bundle */,
 				F1BFB5B84BCC31BF918CDC8402A88C07 /* libPods-Tests.a */,
 				C3B1885CD4E4AFDAD5D0A8586A0D37C4 /* libPods-VPInternationalization.a */,
-				A43E144B96E0C3FCFC6CD49E9167A5D5 /* libVPInternationalization.a */,
+				9B6723137DC1E9BEF51E875B5A6EBAD1 /* libVPInternationalization.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		E1F1EA231B8A554C00C6E8F8 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				E1F1EA331B8A554C00C6E8F8 /* VPInternationalization.h */,
-				E1F1EA251B8A554C00C6E8F8 /* LocalizationManager.h */,
-				E1F1EA261B8A554C00C6E8F8 /* LocalizationManager.m */,
-				E1F1EA271B8A554C00C6E8F8 /* NSObject+Localization.h */,
-				E1F1EA281B8A554C00C6E8F8 /* NSObject+Localization.m */,
-				E1F1EA291B8A554C00C6E8F8 /* UIButton+Localization.h */,
-				E1F1EA2A1B8A554C00C6E8F8 /* UIButton+Localization.m */,
-				E1F1EA2B1B8A554C00C6E8F8 /* UILabel+Localization.h */,
-				E1F1EA2C1B8A554C00C6E8F8 /* UILabel+Localization.m */,
-				E1F1EA2D1B8A554C00C6E8F8 /* UITextField+Localization.h */,
-				E1F1EA2E1B8A554C00C6E8F8 /* UITextField+Localization.m */,
-				E1F1EA2F1B8A554C00C6E8F8 /* UITextView+Localization.h */,
-				E1F1EA301B8A554C00C6E8F8 /* UITextView+Localization.m */,
-				E1F1EA311B8A554C00C6E8F8 /* UIViewController+Localization.h */,
-				E1F1EA321B8A554C00C6E8F8 /* UIViewController+Localization.m */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		E8ADBFD584570D240AD5280EE7C34A9C /* Development Pods */ = {
@@ -277,29 +264,21 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		F26FCEF1877DBA22367543F3A015B2DE /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				E1F1EA231B8A554C00C6E8F8 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		44AE742A985BBB2BBEB1981820D71939 /* Headers */ = {
+		5CA1FD567BA24F125FA0A72EBA3B83E4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1F1EA491B8A554C00C6E8F8 /* UITextField+Localization.h in Headers */,
-				E1F1EA4E1B8A554C00C6E8F8 /* UITextView+Localization.h in Headers */,
-				E1F1EA581B8A554C00C6E8F8 /* VPInternationalization.h in Headers */,
-				E1F1EA351B8A554C00C6E8F8 /* LocalizationManager.h in Headers */,
-				E1F1EA3F1B8A554C00C6E8F8 /* UIButton+Localization.h in Headers */,
-				E1F1EA441B8A554C00C6E8F8 /* UILabel+Localization.h in Headers */,
-				E1F1EA531B8A554C00C6E8F8 /* UIViewController+Localization.h in Headers */,
-				E1F1EA3A1B8A554C00C6E8F8 /* NSObject+Localization.h in Headers */,
+				06720F17886746D4234D49B8DDD3CE32 /* LocalizationManager.h in Headers */,
+				31CB7B2A3BC76CBE09947064846C3F60 /* NSObject+Localization.h in Headers */,
+				532673612006E7CE28962A851D71BEBD /* UIButton+Localization.h in Headers */,
+				6B6A25B42F02D2E4B77C81509EDB42A9 /* UILabel+Localization.h in Headers */,
+				486A9A785764B881ABB56CDFA3873B06 /* UITextField+Localization.h in Headers */,
+				509E64585CDE266D1CE5C0AA7A331A79 /* UITextView+Localization.h in Headers */,
+				7F5F65A252008AA7CBD0AB2327F5147A /* UIViewController+Localization.h in Headers */,
+				F22F75E9F9111C935D595FA557E9EF40 /* VPInternationalization.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,29 +295,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				B4C6E70CE7120762425CE08DA577259F /* PBXTargetDependency */,
+				CED67CA76C4DD15C36582EE4DF385918 /* PBXTargetDependency */,
 			);
 			name = "Pods-VPInternationalization";
 			productName = "Pods-VPInternationalization";
 			productReference = C3B1885CD4E4AFDAD5D0A8586A0D37C4 /* libPods-VPInternationalization.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		A4EC5405AB3D9543B366EEE7FF75C7C8 /* VPInternationalization */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2AD55A27817C20561599245206279458 /* Build configuration list for PBXNativeTarget "VPInternationalization" */;
-			buildPhases = (
-				C2263882CAF1E460D42FFB6057FE0E1E /* Sources */,
-				43546F09D1A829AA6E23161B2FBAEFD7 /* Frameworks */,
-				44AE742A985BBB2BBEB1981820D71939 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				77875C8E308BFB51DF5607FADECE5C7B /* PBXTargetDependency */,
-			);
-			name = VPInternationalization;
-			productName = VPInternationalization;
-			productReference = A43E144B96E0C3FCFC6CD49E9167A5D5 /* libVPInternationalization.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		B7F9EEAA3A818C2819D0FEA5F4500D40 /* Pods-Tests */ = {
@@ -351,11 +312,29 @@
 			buildRules = (
 			);
 			dependencies = (
-				090E0E4455E713BBB990F0016A411AF7 /* PBXTargetDependency */,
+				84AEF11E70DA092BD726B04A54A25FB8 /* PBXTargetDependency */,
 			);
 			name = "Pods-Tests";
 			productName = "Pods-Tests";
 			productReference = F1BFB5B84BCC31BF918CDC8402A88C07 /* libPods-Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E170E628BE4BB8EC31586EB635B32DF0 /* VPInternationalization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA5976EE854C2610725D652B0795D72D /* Build configuration list for PBXNativeTarget "VPInternationalization" */;
+			buildPhases = (
+				C7D2A78B354AE7164B332300251E4A69 /* Sources */,
+				E304A3F88421637781D9CAF8B31C064C /* Frameworks */,
+				5CA1FD567BA24F125FA0A72EBA3B83E4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC115CB2218380B9CC3A225CBD2B783B /* PBXTargetDependency */,
+			);
+			name = VPInternationalization;
+			productName = VPInternationalization;
+			productReference = 9B6723137DC1E9BEF51E875B5A6EBAD1 /* libVPInternationalization.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		FB2CF2C82029B0D7A7E37809BF45813A /* VPInternationalization-VPInternationalization */ = {
@@ -398,7 +377,7 @@
 			targets = (
 				B7F9EEAA3A818C2819D0FEA5F4500D40 /* Pods-Tests */,
 				110E6A9676854BFBC3D50320A14338DD /* Pods-VPInternationalization */,
-				A4EC5405AB3D9543B366EEE7FF75C7C8 /* VPInternationalization */,
+				E170E628BE4BB8EC31586EB635B32DF0 /* VPInternationalization */,
 				FB2CF2C82029B0D7A7E37809BF45813A /* VPInternationalization-VPInternationalization */,
 			);
 		};
@@ -419,13 +398,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1F1EA4D1B8A554C00C6E8F8 /* UITextField+Localization.m in Sources */,
-				E1F1EA3E1B8A554C00C6E8F8 /* NSObject+Localization.m in Sources */,
-				E1F1EA431B8A554C00C6E8F8 /* UIButton+Localization.m in Sources */,
-				E1F1EA391B8A554C00C6E8F8 /* LocalizationManager.m in Sources */,
-				E1F1EA521B8A554C00C6E8F8 /* UITextView+Localization.m in Sources */,
-				E1F1EA481B8A554C00C6E8F8 /* UILabel+Localization.m in Sources */,
-				E1F1EA571B8A554C00C6E8F8 /* UIViewController+Localization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,29 +405,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1F1EA4A1B8A554C00C6E8F8 /* UITextField+Localization.m in Sources */,
-				E1F1EA401B8A554C00C6E8F8 /* UIButton+Localization.m in Sources */,
-				E1F1EA4F1B8A554C00C6E8F8 /* UITextView+Localization.m in Sources */,
-				E1F1EA541B8A554C00C6E8F8 /* UIViewController+Localization.m in Sources */,
-				E1F1EA361B8A554C00C6E8F8 /* LocalizationManager.m in Sources */,
 				9A038A2D8560364C89DC9CF3D4DDDAEA /* Pods-Tests-dummy.m in Sources */,
-				E1F1EA3B1B8A554C00C6E8F8 /* NSObject+Localization.m in Sources */,
-				E1F1EA451B8A554C00C6E8F8 /* UILabel+Localization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C2263882CAF1E460D42FFB6057FE0E1E /* Sources */ = {
+		C7D2A78B354AE7164B332300251E4A69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1F1EA4C1B8A554C00C6E8F8 /* UITextField+Localization.m in Sources */,
-				E1F1EA421B8A554C00C6E8F8 /* UIButton+Localization.m in Sources */,
-				E1F1EA511B8A554C00C6E8F8 /* UITextView+Localization.m in Sources */,
-				E1F1EA561B8A554C00C6E8F8 /* UIViewController+Localization.m in Sources */,
-				E1F1EA381B8A554C00C6E8F8 /* LocalizationManager.m in Sources */,
-				4FDA2E2EACF28769AF2E186D17E3D5FB /* VPInternationalization-dummy.m in Sources */,
-				E1F1EA3D1B8A554C00C6E8F8 /* NSObject+Localization.m in Sources */,
-				E1F1EA471B8A554C00C6E8F8 /* UILabel+Localization.m in Sources */,
+				F9EA608163934D59C5ACA74022C3DC9B /* LocalizationManager.m in Sources */,
+				563B84B494E7966118A14C1E7EF2BDBD /* NSObject+Localization.m in Sources */,
+				621ADC6318EE740E2E7390EA61910EC7 /* UIButton+Localization.m in Sources */,
+				8C293FAC099554C0F7FECC687CC886DF /* UILabel+Localization.m in Sources */,
+				3BEA7A607340E3F8F78A904590A6527C /* UITextField+Localization.m in Sources */,
+				B3A28211207D70AC6999BCCCEED5C18A /* UITextView+Localization.m in Sources */,
+				E95CF1D447109873C07CF7692CEAF1C2 /* UIViewController+Localization.m in Sources */,
+				1D46A2FDC34645B5A6ADB59714FF53DB /* VPInternationalization-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,37 +428,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1F1EA4B1B8A554C00C6E8F8 /* UITextField+Localization.m in Sources */,
-				E1F1EA411B8A554C00C6E8F8 /* UIButton+Localization.m in Sources */,
-				E1F1EA501B8A554C00C6E8F8 /* UITextView+Localization.m in Sources */,
-				E1F1EA551B8A554C00C6E8F8 /* UIViewController+Localization.m in Sources */,
-				E1F1EA371B8A554C00C6E8F8 /* LocalizationManager.m in Sources */,
 				6CFDED503984E5DE2FC2007BAB103A6D /* Pods-VPInternationalization-dummy.m in Sources */,
-				E1F1EA3C1B8A554C00C6E8F8 /* NSObject+Localization.m in Sources */,
-				E1F1EA461B8A554C00C6E8F8 /* UILabel+Localization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		090E0E4455E713BBB990F0016A411AF7 /* PBXTargetDependency */ = {
+		84AEF11E70DA092BD726B04A54A25FB8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = VPInternationalization;
-			target = A4EC5405AB3D9543B366EEE7FF75C7C8 /* VPInternationalization */;
-			targetProxy = 8D980EEC3B3FEBA5120776AA282EB863 /* PBXContainerItemProxy */;
+			target = E170E628BE4BB8EC31586EB635B32DF0 /* VPInternationalization */;
+			targetProxy = 990422E3876E9D75E2A3AEA46F44CA22 /* PBXContainerItemProxy */;
 		};
-		77875C8E308BFB51DF5607FADECE5C7B /* PBXTargetDependency */ = {
+		CED67CA76C4DD15C36582EE4DF385918 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VPInternationalization;
+			target = E170E628BE4BB8EC31586EB635B32DF0 /* VPInternationalization */;
+			targetProxy = A55892165A8B922385D3FFA407FA6F9C /* PBXContainerItemProxy */;
+		};
+		DC115CB2218380B9CC3A225CBD2B783B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "VPInternationalization-VPInternationalization";
 			target = FB2CF2C82029B0D7A7E37809BF45813A /* VPInternationalization-VPInternationalization */;
-			targetProxy = 88641BD944DA287AF7C48F493E852127 /* PBXContainerItemProxy */;
-		};
-		B4C6E70CE7120762425CE08DA577259F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = VPInternationalization;
-			target = A4EC5405AB3D9543B366EEE7FF75C7C8 /* VPInternationalization */;
-			targetProxy = C85369F911ADA69746C910156726FCE4 /* PBXContainerItemProxy */;
+			targetProxy = 7F03B24B84FAD1809C192612205E0B4D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -631,23 +589,7 @@
 			};
 			name = Debug;
 		};
-		9837DD03BEADA4303BD28B250E0EE9FC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 651874977F2092595A1BF19B34FD34B9 /* Pods-VPInternationalization.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		9B978108627D8EF6F870725AF0579084 /* Release */ = {
+		64E91210B29A9BB5BDF590E2819A33A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 087B29F13713DAB54BBFE07F60C018DE /* VPInternationalization-Private.xcconfig */;
 			buildSettings = {
@@ -663,7 +605,7 @@
 			};
 			name = Release;
 		};
-		C79F33A5579251DE18997EA3BFC27EDA /* Debug */ = {
+		7E68941939FA9FEBD10F7793035980B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 087B29F13713DAB54BBFE07F60C018DE /* VPInternationalization-Private.xcconfig */;
 			buildSettings = {
@@ -673,6 +615,22 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9837DD03BEADA4303BD28B250E0EE9FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 651874977F2092595A1BF19B34FD34B9 /* Pods-VPInternationalization.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -694,15 +652,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2AD55A27817C20561599245206279458 /* Build configuration list for PBXNativeTarget "VPInternationalization" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C79F33A5579251DE18997EA3BFC27EDA /* Debug */,
-				9B978108627D8EF6F870725AF0579084 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2B2C7FC50F6EB7FCE876ABC0C08DE0AA /* Build configuration list for PBXNativeTarget "Pods-VPInternationalization" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -726,6 +675,15 @@
 			buildConfigurations = (
 				5F0A0112C4E2A1C8E9D7AB66A3B6BF19 /* Debug */,
 				00FC777CF383F8C21F8D3CDCF998F6F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA5976EE854C2610725D652B0795D72D /* Build configuration list for PBXNativeTarget "VPInternationalization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E68941939FA9FEBD10F7793035980B8 /* Debug */,
+				64E91210B29A9BB5BDF590E2819A33A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
